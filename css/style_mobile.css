@@ -1,0 +1,326 @@
+/* ------- MOBILE------------ */
+
+@media (min-width: 320px) and (max-width: 576px) { 
+body {
+    font-family: 'roboto', sans-serif !important; 
+
+}
+
+h1 {
+    color: white;
+    font-weight: 300;
+    font-size: 2em;
+    padding:  20px;
+}
+
+
+#header {
+    display: none;
+}
+
+/* HEADER */
+#header-mobile {
+    display:block;
+    height: 100vh;
+    background-image: url('../images/1.jpg');
+    background-size: cover;
+}
+
+#header-mobile .conteudo-mobile {
+    text-align: center;
+    margin-top: 150px;
+}
+
+#header-mobile .btn-success {
+    margin: 20px 20px 10px;
+    padding: 12px 60px;
+}
+
+#header-mobile .btn-outline-success {
+    margin: 10px 20px;
+    padding: 12px 60px;
+}
+
+#header-mobile p {
+    font-weight: 300;
+    padding: 0 50px;
+}
+
+
+/* NAVBAR */
+#navbar-principal {
+    display:none;
+}
+
+#navbar-mobile{
+    display: block;
+ 
+}
+
+#navbar-mobile .bg-dark {
+    background: #262C39 !important;
+}
+
+#intro {
+    display: none;
+}
+
+/* INTRO */
+#intro-mobile {
+    display: block;
+    background: rgb(255, 255, 255);
+    height: 100vh;
+}
+
+#intro-mobile .flickity-viewport {
+    background: rgb(255, 255, 255);
+    height: 100vh !important;
+    padding: 0 20px;
+}
+
+#intro-mobile .flickity-page-dots{
+    bottom: 70px;
+}
+
+#intro-mobile .carousel-cell{
+    background: transparent;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#intro-mobile .conteudo {
+    margin: 60px 30px 30px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+
+#intro-mobile h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #19FF85;
+    padding: 30px 20px 10px;
+    line-height: 1.0;
+}
+
+#intro-mobile .flickity-prev-next-button.previous {
+    display: none;
+}
+
+#intro-mobile .flickity-prev-next-button.next {
+    display: none;
+}
+
+
+/* SERVICOS */
+
+#servicos {
+    display: none;
+}
+#servicos-mobile {
+    display: block;
+    background: rgb(22, 194, 102);
+    height: 100vh;
+}
+
+#servicos-mobile .flickity-prev-next-button {
+    display: none;
+}
+
+#servicos-mobile .flickity-viewport {
+    background: rgb(22, 194, 102);
+    height: 70vh !important;
+    padding: 0 20px;
+}
+
+#servicos-mobile .flickity-page-dots{
+    bottom: 10px;
+}
+
+#servicos-mobile .flickity-page-dots .dot{
+    background-color: #262C39 !important;
+}
+
+
+
+#servicos-mobile .carousel-cell{
+    background: transparent;
+    text-align: center;
+    margin-top: 0px;
+}
+
+#servicos-mobile .titulo {
+    margin-top: 50px;
+    text-align: center;
+    padding: 0 30px;
+    color: #262C39;
+}
+
+#servicos-mobile .conteudo {
+    height: 400px;
+    margin: 10px 30px;
+    background-image: url('../images/team-1.jpg');
+    background-size: cover;
+    border-radius: 10px;
+    padding: 60px 20px;
+}
+
+#servicos-mobile h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #19FF85;
+    padding: 30px 20px 10px;
+    line-height: 1.0;
+}
+
+
+/* DEPOIMENTO */
+
+#depoimentos {
+    display: none;
+}
+
+#depoimentos-mobile {
+    padding: 20px ;
+    display: block;
+    background: #262C39;
+    background-image: url('../images/2-mobile.jpg');
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    color: white;
+}
+
+#depoimentos-mobile .video-depo {
+    margin: 15px 0; 
+    padding: 10px;
+
+}
+
+#depoimentos-mobile .conteudo {
+    margin-top: 80px;
+    width: 100%;
+}
+
+#depoimentos-mobile p {
+padding: 0 20px;
+}
+
+
+
+#bandeiras {
+    display: none;
+}
+
+#footer {
+    display: none;
+}
+
+
+#footer-mobile {
+    display: block;
+    background: #03251A;
+    padding: 60px 30px 10px;
+    text-align: center;
+}
+
+#footer-mobile h5 {
+    color: #19FF85;
+}
+
+#footer-mobile p {
+    padding: 5px 0;
+    color: white;
+}
+
+#footer-mobile ul  {
+    color: white;
+    list-style: none;
+    padding: 0;
+
+}
+
+#footer-mobile ul li {
+    list-style: none;
+    padding: 2px 0;
+}
+
+#footer-mobile ul li a {
+    color: white;
+}
+
+#footer-mobile ul li a:hover {
+    color: #19FF85;
+}
+
+#footer-mobile .img-afrac {
+    width: 100px;
+    margin: 0 80px;
+
+}
+
+/* MODAL */
+
+#exampleModal h2 {
+    text-align: left;
+    line-height: 1.0;
+    padding: 10px 30px 20px;
+    font-weight: 400;
+}
+
+#exampleModal .btn-success {
+    padding: 15px 30px;
+    background: #03251A;
+    margin: 7px 0;
+    color: white;
+}
+
+.modal-content {
+    background: #19FF85;
+    background-image: url('../images/bg-modal.jpg');
+    background-size: cover;
+    height: 95vh;
+    text-align: center;
+}
+
+.modal-header {
+    border: none;
+}
+
+.modal-body {
+    padding: 0 20px;
+}
+
+.modal-footer {
+    border: none;
+}
+
+/* MENU MODAL */
+
+#menu-mobile-modal .modal-content {
+    background: #262C39;
+}
+
+#menu-mobile-modal a {
+    text-align: left;
+    color: white;
+    font-size: 16px;
+    padding: 10px 0
+}
+
+#menu-mobile-modal a:hover {
+    color: #19FF85;
+}
+
+
+#menu-mobile-modal .social-menu {
+    padding: 5px 20px;
+}
+
+
+
+
+
+    }
+
+

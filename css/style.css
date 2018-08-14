@@ -1,0 +1,406 @@
+/* BOTÕES */
+body {
+    font-family: 'roboto', sans-serif !important;
+}
+
+p, a {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+.btn-primary {
+    color: #19FF85;
+    background: #075741;
+    border-radius: 100px;
+    padding: 8px 20px;
+    margin: 10px;
+    border: #075741 solid 1px;
+}
+
+.btn-primary:hover {
+    color: #075741;
+    border: solid 1px rgb(255, 255, 255);
+    background: white;
+}
+
+.btn-success {
+    color: #262C39;
+    background: #19FF85;
+    border-radius: 100px;
+    padding: 8px 30px;
+    border: #19FF85 solid 1px;
+}
+
+.btn-success:hover {
+    color: #19FF85;
+    border: solid 1px #19FF85;
+    background: transparent;
+}
+
+.btn-outline-success {
+    color: #19FF85;
+    border: solid 1px #19FF85;
+    background: transparent;
+    padding: 8px 30px;
+    border-radius: 100px;
+}
+
+.btn-outline-success:hover {
+    color: #262C39;
+    background: #19FF85;
+}
+
+.btn-warning {
+    border-radius: 100px;
+    padding: 8px 30px;
+}
+
+/* NAVBAR */
+
+
+
+#navbar-principal .bg-dark {
+    background:  #03251A !important;
+
+}
+
+#navbar-principal .navbar {
+    padding: 20px;
+}
+
+.navbar ul li{
+    padding: 0 30px
+} 
+
+#navbar-mobile {
+    display: none;
+}
+
+
+/* HEADER */
+
+#header {
+    background: #262C39;
+    background-image: url('../images/3.jpg');
+    background-size: cover;
+    height: 80vh;
+
+}
+
+#header .conteudo-mobile {
+    display: none;
+
+}
+
+#header .conteudo {
+    margin: 280px 0 100px;
+}
+
+#header .conteudo a {
+    color: #19FF85;
+    text-decoration: underline;
+}
+
+#header .conteudo a:hover {
+    color: white;
+}
+
+#header .image {
+    height: 500px;
+    padding: 0px 50px;
+}
+
+#header h1 {
+    color: #19FF85;
+
+}
+
+#header p {
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#header-mobile {
+    display: none;
+}
+
+#header .img-header {
+    margin-top: 100px;
+}
+
+#header .posicao-menu-servicos {
+    top: 0px;
+}
+
+/* MENU SERVICOS */
+
+
+#menu-servicos {
+    background: #19FF85;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+
+#menu-servicos h5 {
+    margin-top:10px;
+    padding: 0 10px;
+}
+
+/* INTRO */
+
+#intro {
+    background: #f3f3f3;
+    padding: 60px 0;
+}
+
+#intro-mobile {
+    display: none;
+}
+
+#intro .conteudo {
+    padding: 80px 100px;
+
+}
+
+#intro .flickity-prev-next-button.next  {
+    right: -21px;
+
+}
+
+#intro .flickity-prev-next-button.previous {
+    left: -21px;
+
+}
+
+#mobile .img-mobile {
+    margin: 10px;
+}
+
+#intro h2 {
+
+    color: #19FF85;
+    font-weight: bold;
+}
+
+#intro p {
+    margin: 20px 0;
+}
+
+#intro .image-intro {
+    background: url('../images/intro-img.jpg');
+    background-size: cover;
+}
+
+#intro .image-intro2 {
+    background: url('../images/intro2-img.jpg');
+    background-size: cover;
+}
+
+#intro .image-intro3 {
+    background: url('../images/intro-img.jpg');
+    background-size: cover;
+}
+
+#intro .flickity-slider {
+    background: transparent;
+}
+
+#intro .carousel {
+    background: transparent;
+}
+
+
+/* DEPOIMENTOS */
+
+#depoimentos-mobile {
+    display: none;
+}
+
+#depoimentos {
+    background: #262C39;
+    background-image: url('../images/2.jpg');
+    background-size: cover;
+
+
+}
+
+#depoimentos .row {
+    padding: 100px 0;
+
+}
+
+#depoimentos .conteudo {
+    margin: 50px 0;
+
+
+}
+
+#depoimentos h2 {
+    color: #19FF85;
+}
+
+#depoimentos p {
+    color: white;
+}
+
+#depoimentos .conteudo a {
+    color: #19FF85;
+    text-decoration: underline;
+}
+
+#depoimentos .conteudo a:hover {
+    color: white;
+}
+
+#depoimentos .image {
+    width: 100%;
+}
+
+/* SERVICOS */
+
+#servicos {
+    background: #19FF85;
+    padding: 80px;
+}
+
+#servicos .servicos-card-balcao {
+    background: #262C39;
+    background-image: url('../images/team-1.jpg');
+    background-size:cover;
+    height: 350px;
+    margin: 10px 0;
+    border-radius: 6px;
+}
+
+#servicos .conteudo-card {
+    padding: 100px 30px;    
+}
+
+#servicos .servicos-card-mobilidade {
+    background: #262C39;
+    background-image: url('../images/team-2.jpg');
+    background-size:cover;
+    height: 350px;
+    margin: 10px 0;
+    border-radius: 6px;
+}
+
+#servicos .conteudo-card-mobilidade {
+    padding: 100px 30px;    
+}
+
+#servicos .servicos-card-multiplataformas {
+    background: #262C39;
+    background-image: url('../images/team-3.jpg');
+    background-size:cover;
+    height: 350px;
+    margin: 10px 0;
+    border-radius: 6px;
+}
+
+#servicos .conteudo-card-multiplataformas  {
+    padding: 100px 30px;    
+}
+
+#servicos .servicos-card-conciliacao {
+    background: #262C39;
+    background-image: url('../images/team-2.jpg');
+    background-size:cover;
+    height: 350px;
+    margin: 10px 0;
+    padding: 100px 10px 0 30px;;
+    border-radius: 6px;
+}
+
+#servicos h6 {
+    color: #262C39;
+}
+
+#servicos h3 {
+    color: #19FF85;
+}
+
+#servicos h2 {
+    color: #262C39;
+}
+
+#servicos p {
+    color: white;
+}
+
+/* SERVICOS MOBILE */
+
+#servicos-mobile {
+    display: none;
+}
+
+/* BANDEIRAS */
+
+#bandeiras {
+    background: white;
+    padding: 10px 0;
+}
+
+
+
+#bandeiras .flickity-viewport {
+    background: transparent;
+}
+
+#bandeiras .flickity-page-dots {
+    bottom: 10px;
+
+}
+
+/* FOOTER */
+
+#footer-mobile{
+    display: none;
+}
+
+#footer {
+    background: #03251A;
+    padding: 60px 0 0;
+}
+
+#footer h5 {
+    color: #19FF85;
+}
+
+#footer p {
+    padding: 5px 0;
+    color: white;
+}
+
+#footer ul  {
+    color: white;
+    list-style: none;
+    padding: 0;
+
+}
+
+#footer ul li {
+    list-style: none;
+    padding: 2px 0;
+}
+
+#footer ul li a {
+    color: white;
+}
+
+#footer ul li a:hover {
+    color: #19FF85;
+}
+
+#footer .img-afrac {
+    width: 90px;
+    margin: 0 80px;
+
+}
+
+
