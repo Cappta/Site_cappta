@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/flickity.css" media="screen">
 
 
+
     <title>Cappta</title>
 </head>
 
@@ -73,6 +74,93 @@
         </nav>
     </section>
 
+    <section id="menu-mobile-modal">
+            <div class="modal fade" id="menuModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-success" href="#">Soluções</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active ml-3" href="#">Cappta Integrado</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link active ml-3" href="#">Cappta Pague</a>
+                                    </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active ml-3" href="#">Conciliação</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active text-success" href="#">Diferenciais</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active ml-3" href="#">Portal de vendas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active ml-3" href="#">Homologue seu software</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active ml-3" href="#">Ativar novas bandeiras</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active ml-3" href="#">Amigo Cappta Amigo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active ml-3" href="#">Seja um Capptor</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active ml-3" href="#">Trabalhe conosco</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link active text-success" href="#">Sobre</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active ml-3" href="#">Quem somos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active ml-3" href="#">Seja um Capptor</a>
+                                    </li>
+                                    <li class="nav-item">
+                                            <a class="nav-link active ml-3" href="#">Trabalhe conosco</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link active text-success" href="#">Contato</a>
+                                            </li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="row">
+                                <a href="https://cappta.force.com/ajuda/s/">
+                                    <div class="btn-outline-success">Central de ajuda</div>
+                                </a>
+                                <div class="social-menu">
+                                    <a href="https://www.facebook.com/cappta" class="facebook">
+                                        <i class="fa fa-2x fa-facebook text-success"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/company/cappta/" class="linkedin ml-3">
+                                        <i class="fa fa-2x fa-linkedin text-success"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/capptasa" class="youtube ml-3">
+                                        <i class="fa fa-2x fa-youtube text-success"></i>
+                                    </a>
+                                </div>
+                            </div>
+    
+    
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     <section id="header">
         <div class="container">
             <div class="row">
@@ -118,21 +206,30 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="conteudo-mobile">
-                        <h1>
-                            <span class="font-weight-bold">Soluções Integradas</span> de pagamento</h1>
-                        <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua. </p>
-                        <div class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Não sou cliente</div>
-                        <div class="btn btn-outline-success">Já sou cliente</div>
-
+                        <h1>Soluções integradas de Pagamentos</h1> 
+                        <span id="typed"  class="text-white"></span>
+                        <div id="typed-strings">
+                                <p>Capture suas vendas em cartão com <br> a empresa que mudou o mercado!</p>                        
+                        </div>
                     </div>
+
+                   <div class="col-md-6 button-mobile" style="height: 200px; margin-top: 50x;"> 
+                            <div class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Não sou cliente</div>
+                            <a href="https://autenticacao.cappta.com.br/">
+                                <div class="btn btn-outline-success">Já sou cliente</div>
+                            </a>
+                    </div>
+                    
                 </div>
             </div>
             <div class="row">
                 <div class="col-6">
-                    <a>
-                        <i class="fa fa-2x fa-angle-down text-white" style="margin: 60px 162px;"></i>
-                    </a>
+                    <div class="downArrow bounce">
+                        <a href="#intro-mobile">
+                            <i class="fa fa-3x fa-angle-down"></i>
+                        </a>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -188,10 +285,11 @@
                 <div class="carousel-cell">
                     <div class="row">
                         <div class="col-md-6 conteudo">
+                            <h2>Quem somos</h2>
                             <img src="images/mobile/intro-img-mobile.jpg" class="img-fluid">
-                            <h2>Soluções Integradas de pagamento.</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua</p>
+                            <p>Formada por sócios com vasta experiência em varejo, automação comercial e meios de pagamento,
+                                a Cappta foi uma das primeiras Fintechs do Brasil.
+                            </p>
                             <div class="btn btn-success" data-toggle="modal" data-target="modal-facens">saiba mais</div>
                         </div>
 
@@ -201,11 +299,16 @@
                 <div class="carousel-cell">
                     <div class="row">
                         <div class="col-md-6 conteudo">
+                            <h2>O que fazemos</h2>
                             <img src="images/mobile/intro-img-mobile.jpg" class="img-fluid">
-                            <h2>Soluções Integradas de pagamento.</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua</p>
-                            <div class="btn btn-success">saiba mais</div>
+                            <p>Com um time de pessoas que entendem do varejo criamos soluções que funcionam integradas ao seu
+                                sistema vendas ou de gestão.
+                                <br>
+                                <br> Unindo plataformas intuitivas e um atendimento excepcional, permitimos ao empreendedor mais
+                                controle, eficiência e liberdade para administrar o seu negócio.
+                            </p>
+
+                            <!-- <div class="btn btn-success">saiba mais</div> -->
                         </div>
 
 
@@ -214,11 +317,15 @@
                 <div class="carousel-cell">
                     <div class="row">
                         <div class="col-md-6 conteudo">
+                            <h2>Em que acreditamos</h2>
                             <img src="images/mobile/intro-img-mobile.jpg" class="img-fluid">
-                            <h2>Soluções Integradas de pagamento.</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua</p>
-                            <div class="btn btn-success">saiba mais</div>
+                            <p>Reconhecemos o varejo e a prestação de serviços como motores da economia do país. Juntas, somam
+                                quase 30% do PIB do Brasil.
+                                <br>
+                                <br> Ajudar os empresários do setor a tomar melhores e mais ágeis decisões é ajudar o país a
+                                crescer.
+                            </p>
+                            <div class="btn btn-success">Nossa história</div>
                         </div>
 
 
@@ -287,41 +394,66 @@
             <div class="row">
                 <div class="col-md-6 titulo">
                     <h3 class="font-weight-bold">Soluções Cappta</h3>
-                    <p>Lorem ipsum dolor amet sit ipsum dolor amet sit ipsum dolor amet sit</p>
+                    <p>Mais eficiência para qualquer modelo de negócio.</p>
                 </div>
             </div>
             <div class="carousel" data-flickity>
                 <div class="carousel-cell">
                     <div class="row">
                         <div class="col-md-6 conteudo">
-                            <h2>Soluções Integradas de pagamento.</h2>
-                            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua</p>
+                            <h5 class="text-white">Para vender no balcão</h5>
+                            <h2>Cappta Integrado</h2>
+                            <p class="text-white">Automatize as vendas em cartão e aumente sua lucratividade! Garanta sempre as menores taxas,
+                                facilite a sua conciliação e economize tempo na hora de fechar o caixa!
+                            </p>
                             <div class="btn btn-success">saiba mais</div>
                         </div>
 
 
                     </div>
                 </div>
+
                 <div class="carousel-cell">
                     <div class="row">
                         <div class="col-md-6 conteudo">
-                            <h2>Soluções Integradas de pagamento.</h2>
-                            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua</p>
+                            <h5 class="text-white">Para vender em qualquer lugar.</h5>
+                            <h2>Cappta
+                                <br>com mobilidade</h2>
+                            <p class="text-white">Transforme qualquer dispositivo Android em um caixa independente! Ganhe eficiência com a integração
+                                sem comprometer a mobilidade na hora do pagamento.
+                            </p>
                             <div class="btn btn-success">saiba mais</div>
                         </div>
 
 
                     </div>
                 </div>
+
                 <div class="carousel-cell">
                     <div class="row">
                         <div class="col-md-6 conteudo">
+                            <h5 class="text-white">Para dividir com outros profissionais
+                            </h5>
+                            <h2>Cappta Pague</h2>
+                            <p class="text-white">Realize pagamentos para diferentes profissionais em uma mesma solução.
+                            </p>
+                            <div class="btn btn-success">saiba mais</div>
+                        </div>
 
-                            <h2>Soluções Integradas de pagamento.</h2>
-                            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua</p>
+
+                    </div>
+                </div>
+
+                <div class="carousel-cell">
+                    <div class="row">
+                        <div class="col-md-6 conteudo">
+                            <h5 class="text-white">Cappta Conciliação.
+                            </h5>
+                            <h2>Cappta Conciliação</h2>
+                            <p class="text-white">Facilite sua conciliação, reduza custos em mão de obra no seu financeiro e evite perdas no processo
+                                de pagamento das operadoras.
+
+                            </p>
                             <div class="btn btn-success">saiba mais</div>
                         </div>
 
@@ -512,13 +644,13 @@
                         reservados.
                     </p>
                     <h5 class="mb-3">Siga-nos</h5>
-                    <a href="#" class="facebook">
+                    <a href="https://www.facebook.com/cappta" class="facebook">
                         <i class="fa fa-2x fa-facebook text-light"></i>
                     </a>
-                    <a href="#" class="linkedin ml-3">
+                    <a href="https://www.linkedin.com/company/cappta/" class="linkedin ml-3">
                         <i class="fa fa-2x fa-linkedin text-light"></i>
                     </a>
-                    <a href="#" class="youtube ml-3">
+                    <a href="https://www.youtube.com/capptasa" class="youtube ml-3">
                         <i class="fa fa-2x fa-youtube text-light"></i>
                     </a>
                 </div>
@@ -541,7 +673,9 @@
                             <a href="#">Sobre a Cappta</a>
                         </li>
                     </ul>
-                    <div class="btn btn-success">Central de ajuda</div>
+                    <a href="https://cappta.force.com/ajuda/s/">
+                        <div class="btn btn-success">Central de ajuda</div>
+                    </a>
                 </div>
                 <div class="col-md-3 mb-5">
                     <h5>Relacionamento com o cliente</h5>
@@ -586,76 +720,7 @@
             </div>
         </div>
     </div>
-
-    <!-- Modal menu -->
-
-    <section id="menu-mobile-modal">
-        <div class="modal fade" id="menuModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <ul class="nav flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Cappta Pague</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Cappta Integrado</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Redução de Taxas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Portal de vendas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Homologue seu software</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Ativar novas bandeiras</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Amigo Cappta Amigo</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Quem somos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Seja um Capptor</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Trabalhe conosco</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="modal-footer">
-                        <div class="row">
-                            <div class="btn-outline-success">Central de ajuda</div>
-                            <div class="social-menu">
-                                <a href="#" class="facebook">
-                                    <i class="fa fa-2x fa-facebook text-light"></i>
-                                </a>
-                                <a href="#" class="linkedin ml-3">
-                                    <i class="fa fa-2x fa-linkedin text-light"></i>
-                                </a>
-                                <a href="#" class="youtube ml-3">
-                                    <i class="fa fa-2x fa-youtube text-light"></i>
-                                </a>
-                            </div>
-                        </div>
-
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+ 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -666,7 +731,24 @@
         crossorigin="anonymous"></script>
 
     <!-- slider -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <script src="js/flickity.pkgd.js"></script>
+    
+
+    <script>
+    $('document').ready(function(){
+         var typed = new Typed('#typed',{
+            stringsElement: '#typed-strings',
+             typeSpeed: 30,
+             backSpeed: 30,
+             smartBackspace: true, // this is a default
+             loop: true,
+             showCursor: true,
+             fadeOut: true,
+         });
+    });
+    </script>
+
 
 </body>
 
