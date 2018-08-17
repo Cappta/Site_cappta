@@ -74,7 +74,7 @@ h5 {
 
 .navbar ul li{
     padding: 0 30px
-} 
+}
 
 #navbar-mobile {
     display: none;
@@ -97,15 +97,16 @@ h5 {
 }
 
 #header .conteudo {
-    margin: 280px 0 100px;
+    margin: 250px 0 20px;
+    height: 100px;
 }
 
-#header .conteudo a {
+#header a {
     color: #19FF85;
     text-decoration: underline;
 }
 
-#header .conteudo a:hover {
+#header  a:hover {
     color: white;
 }
 
@@ -119,10 +120,19 @@ h5 {
 
 }
 
-#header p {
+#header span {
+    font-size: 40px;
+    color: white !important;
+    line-height: 1.2;
+}
+
+
+
+#header h4 {
     color: white;
-    font-size: 16px;
-    margin-top: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-top: 10px;
 }
 
 #header-mobile {
@@ -141,15 +151,20 @@ h5 {
 
 
 #menu-servicos {
+    position: absolute;
+    top: 90%px;
     background: #19FF85;
     padding: 20px 30px;
     border-radius: 5px;
+    height: 100px;
 }
 
 #menu-servicos h5 {
     margin-top:10px;
     padding: 0 10px;
 }
+
+
 
 /* INTRO */
 
@@ -166,6 +181,7 @@ h5 {
     padding: 80px 100px;
 
 }
+
 
 #intro .flickity-prev-next-button.next  {
     right: -21px;
@@ -272,46 +288,55 @@ h5 {
     background: #262C39;
     background-image: url('../images/team-1.jpg');
     background-size:cover;
-    height: 350px;
+    height: 400px;
     margin: 10px 0;
     border-radius: 6px;
 }
 
 #servicos .conteudo-card {
-    padding: 100px 30px;    
+    padding: 80px 20px;    
+}
+
+#servicos .btn-success {
+    margin: 20px 0;
+}
+
+
+#servicos p {
+    margin: 20px 0;
 }
 
 #servicos .servicos-card-mobilidade {
     background: #262C39;
     background-image: url('../images/team-2.jpg');
     background-size:cover;
-    height: 350px;
+    height: 400px;
     margin: 10px 0;
     border-radius: 6px;
 }
 
 #servicos .conteudo-card-mobilidade {
-    padding: 100px 30px;    
+    padding: 80px 20px;    
 }
 
 #servicos .servicos-card-multiplataformas {
     background: #262C39;
     background-image: url('../images/team-3.jpg');
     background-size:cover;
-    height: 350px;
+    height: 400px;
     margin: 10px 0;
     border-radius: 6px;
 }
 
 #servicos .conteudo-card-multiplataformas  {
-    padding: 100px 30px;    
+    padding: 70px 20px;    
 }
 
 #servicos .servicos-card-conciliacao {
     background: #262C39;
     background-image: url('../images/team-2.jpg');
     background-size:cover;
-    height: 350px;
+    height: 400px;
     margin: 10px 0;
     padding: 100px 10px 0 30px;;
     border-radius: 6px;
@@ -346,15 +371,22 @@ h5 {
     padding: 10px 0;
 }
 
-
-
 #bandeiras .flickity-viewport {
     background: transparent;
 }
 
 #bandeiras .flickity-page-dots {
     bottom: 10px;
+    display: none;
 
+}
+
+#bandeiras .flickity-button {
+    background: rgb(255, 255, 255);
+}
+
+#bandeiras .flickity-button-icon {
+    fill: rgb(46, 46, 46);
 }
 
 /* FOOTER */
