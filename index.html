@@ -5,6 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
@@ -13,6 +14,7 @@
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- <link rel="stylesheet" href="css/flickity-docs.css" media="screen"> -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/style.css" media="screen">
     <link rel="stylesheet" href="css/style_mobile.css" media="screen">
     <link rel="stylesheet" href="css/flickity.css" media="screen">
@@ -40,11 +42,34 @@
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Diferenciais</a>
+                        <li class="nav-item dropdown">
+                                <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Soluções
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="#">Cappta Integrado</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#">Cappta Pague</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#">Cappta Conciliação</a>
+                                </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Serviços</a>
+                        <li class="nav-item dropdown">
+                                <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Diferenciais
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="#">Portal</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#">Redução de taxas</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#">Homologue seu software</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#">Ativação de bandeiras</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#">Amigo Cappta Amigo</a>
+                               
+                                </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="#">Sobre</a>
@@ -165,12 +190,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="conteudo">
-                        <h1>Soluções Integradas de pagamento.</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua. </p>
-                        <a href="#">Saiba mais</a>
+                    <div class="conteudo"> 
+                        <span id="typed"  class="text-white"></span>
+                        <div id="typed-strings">
+                                <h1>Soluções Integradas de pagamento.</h1>                             
+                        </div> 
                     </div>
+                        <h4>Capture suas vendas em cartão com a empresa que mudou o mercado!</h4>
+                        <div class="btn btn-outline-success mt-4">Saiba mais</div>
                 </div>
                 <div class="col-md-6">
                     <img src="images/shutterstock_675593260.png" class="img-fluid img-header">
@@ -207,9 +234,9 @@
                 <div class="col-md-6">
                     <div class="conteudo-mobile">
                         <h1>Soluções integradas de Pagamentos</h1> 
-                        <span id="typed"  class="text-white"></span>
+                        <span id="typed"></span>
                         <div id="typed-strings">
-                                <p>Capture suas vendas em cartão com <br> a empresa que mudou o mercado!</p>                        
+                                <p class="text-white">Capture suas vendas em cartão com <br> a empresa que mudou o mercado!</p>                        
                         </div>
                     </div>
 
@@ -238,41 +265,43 @@
     <section id="intro">
         <div class="container">
             <div class="carousel" data-flickity>
-                <div class="carousel-cell">
-                    <div class="row">
+                <div class="carousel-cell" style="height: 400px">
+                    <div class="row" style="height: 400px">
                         <div class="col-md-6 conteudo">
-                            <h2>Soluções Integradas de pagamento.</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua</p>
-                            <div class="btn btn-success">saiba mais</div>
+                            <h2>Quem somos</h2>
+                            <p>Formada por sócios com vasta experiência em varejo, automação comercial e meios de pagamento, a Cappta foi uma das primeiras Fintechs do Brasil.
+                                </p>
+                            <div ></div>
                         </div>
                         <div class="col-md-6 image-intro">
                         </div>
                     </div>
                 </div>
-                <div class="carousel-cell">
-                    <div class="row">
-                        <div class="col-md-6 conteudo">
-                            <h2>Soluções Integradas de pagamento.</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua</p>
-                            <div class="btn btn-success">saiba mais</div>
+                <div class="carousel-cell" style="height: 400px">
+                        <div class="row" style="height: 400px">
+                            <div class="col-md-6 conteudo">
+                                <h2>O que fazemos</h2>
+                                <p>Com um time de pessoas que entendem do varejo criamos soluções que funcionam integradas ao seu sistema vendas ou de gestão.
+                                        Unindo plataformas intuitivas e um atendimento excepcional, permitimos ao empreendedor mais controle, eficiência e liberdade para administrar o seu negócio. 
+                                    </p>
+                                <div ></div>
+                            </div>
+                            <div class="col-md-6 image-intro2">
+                            </div>
                         </div>
-                        <div class="col-md-6 image-intro2">
-                        </div>
-                    </div>
                 </div>
-                <div class="carousel-cell">
-                    <div class="row">
-                        <div class="col-md-6 conteudo">
-                            <h2>Soluções Integradas de pagamento.</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua</p>
-                            <div class="btn btn-success">saiba mais</div>
+                <div class="carousel-cell" style="height: 400px">
+                        <div class="row" style="height: 400px">
+                            <div class="col-md-6 conteudo">
+                                <h2>Em que acreditamos</h2>
+                                <p>Reconhecemos o varejo e a prestação de serviços como motores da economia do país. Juntas, somam quase 30% do PIB do Brasil.
+                                        Ajudar os empresários do setor a tomar melhores e mais ágeis decisões é ajudar o país a crescer.
+                                    </p>
+                                <div ></div>
+                            </div>
+                            <div class="col-md-6 image-intro">
+                            </div>
                         </div>
-                        <div class="col-md-6 image-intro">
-                        </div>
-                    </div>
                 </div>
 
             </div>
@@ -343,49 +372,57 @@
             <div class="row">
                 <div class="col-md-12 mb-3">
                     <h2>Soluções Cappta</h2>
-                    <h6>Criando soluções que se adaptam ao seu modelo de negócio!</h6>
+                    <h6>Mais eficiência para qualquer modelo de negócio.
+                        </h6>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-3">
                     <div class="servicos-card-balcao">
                         <div class="conteudo-card">
-                            <h3>Balcão de vendas</h3>
-                            <p>Lorem ipsum color</p>
+                            <h3>Para vender <br>no balcão</h3>
+                            
+                            <p>Automatize as vendas em cartão, facilite a sua conciliação e economize tempo na hora de fechar o caixa!
+                                </p>
                             <div class="btn btn-success">Saiba mais</div>
                         </div>
 
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="servicos-card-mobilidade">
+                <div class="servicos-card-mobilidade">
                         <div class="conteudo-card-mobilidade">
-                            <h3>Vendas com Mobilidade</h3>
-                            <p>Lorem ipsum color</p>
+                            <h3>Para vender onde quiser</h3>
+                            <p>Transforme qualquer <br>dispositivo Android em <br>um caixa independente <br>e
+                                    ganhe eficiência!
+                                    </p>
                             <div class="btn btn-success">Saiba mais</div>
                         </div>
-                    </div>
+                </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="servicos-card-multiplataformas">
-                        <div class="conteudo-card-multiplataformas">
-                            <h3>Multi
-                                <br>plataformas</h3>
-                            <p>Lorem ipsum color</p>
-                            <div class="btn btn-success">Saiba mais</div>
+                        <div class="servicos-card-multiplataformas">
+                            <div class="conteudo-card-multiplataformas">
+                                <h3>Para dividir <br>com outros profissionais
+                                    </h3>
+                                <p>Realize pagamentos para diferentes empreendedores em uma mesma solução.
+                                    </p>
+                                <div class="btn btn-success">Saiba mais</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="servicos-card-multiplataformas">
-                        <div class="conteudo-card-multiplataformas">
-                            <h3>Conciliação</h3>
-                            <p>Lorem ipsum color</p>
-                            <br>
-                            <div class="btn btn-success">Saiba mais</div>
+                    <div class="col-md-3">
+                            <div class="servicos-card-multiplataformas">
+                                <div class="conteudo-card-multiplataformas">
+                                    <h3>Para conciliar suas vendas
+                                        </h3>
+                                    <p>Facilite sua conciliação, reduza custos em mão de obra no seu financeiro e evite perdas no processo de pagamento das operadoras.
+                                        </p>
+                                    <div class="btn btn-success">Saiba mais</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
+
 
     </section>
 
@@ -401,10 +438,9 @@
                 <div class="carousel-cell">
                     <div class="row">
                         <div class="col-md-6 conteudo">
-                            <h5 class="text-white">Para vender no balcão</h5>
-                            <h2>Cappta Integrado</h2>
-                            <p class="text-white">Automatize as vendas em cartão e aumente sua lucratividade! Garanta sempre as menores taxas,
-                                facilite a sua conciliação e economize tempo na hora de fechar o caixa!
+                            
+                            <h2>Para vender no balcão</h2>
+                            <p class="text-white">Automatize as vendas em cartão, facilite a sua conciliação e economize tempo na hora de fechar o caixa!
                             </p>
                             <div class="btn btn-success">saiba mais</div>
                         </div>
@@ -416,11 +452,9 @@
                 <div class="carousel-cell">
                     <div class="row">
                         <div class="col-md-6 conteudo">
-                            <h5 class="text-white">Para vender em qualquer lugar.</h5>
-                            <h2>Cappta
-                                <br>com mobilidade</h2>
-                            <p class="text-white">Transforme qualquer dispositivo Android em um caixa independente! Ganhe eficiência com a integração
-                                sem comprometer a mobilidade na hora do pagamento.
+                           
+                            <h2>Para vender onde quiser</h2>
+                            <p class="text-white">Transforme qualquer dispositivo Android em um caixa independente e ganhe eficiência!
                             </p>
                             <div class="btn btn-success">saiba mais</div>
                         </div>
@@ -432,10 +466,8 @@
                 <div class="carousel-cell">
                     <div class="row">
                         <div class="col-md-6 conteudo">
-                            <h5 class="text-white">Para dividir com outros profissionais
-                            </h5>
-                            <h2>Cappta Pague</h2>
-                            <p class="text-white">Realize pagamentos para diferentes profissionais em uma mesma solução.
+                            <h2>Para dividir com outros profissionais</h2>
+                            <p class="text-white">Realize pagamentos para diferentes empreendedores em uma mesma solução.
                             </p>
                             <div class="btn btn-success">saiba mais</div>
                         </div>
@@ -447,11 +479,9 @@
                 <div class="carousel-cell">
                     <div class="row">
                         <div class="col-md-6 conteudo">
-                            <h5 class="text-white">Cappta Conciliação.
-                            </h5>
-                            <h2>Cappta Conciliação</h2>
-                            <p class="text-white">Facilite sua conciliação, reduza custos em mão de obra no seu financeiro e evite perdas no processo
-                                de pagamento das operadoras.
+
+                            <h2>Para conciliar suas vendas</h2>
+                            <p class="text-white">Facilite sua conciliação, reduza custos em mão de obra no seu financeiro e evite perdas no processo de pagamento das operadoras.
 
                             </p>
                             <div class="btn btn-success">saiba mais</div>
@@ -476,7 +506,7 @@
                         <p>Escolhemos a Cappta por uma questão de praticidade e boa reputação.
                             <br>
                             <br> Vinicius | Empório da Cerveja</p>
-                        <div class="btn btn-success">Saiba mais</div>
+                        <div class="btn btn-success mt-3">Saiba mais</div>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -626,7 +656,7 @@
                     <a href="#">
                         <img src="images/afrac.png" class="mb-3 img-afrac">
                     </a>
-                    <p class="text-center">Vencedora do primeiro prêmio Afrac de Excelência na categoria Meios de Pagamento!</p>
+                    <p class="text-center">Vencedora do primeiro prêmio Afrac de Excelência (Biênio 2017/2018) na categoria Meios de Pagamento!</p>
                 </div>
             </div>
         </div>
@@ -739,8 +769,8 @@
     $('document').ready(function(){
          var typed = new Typed('#typed',{
             stringsElement: '#typed-strings',
-             typeSpeed: 30,
-             backSpeed: 30,
+             typeSpeed: 40,
+             backSpeed: 0,
              smartBackspace: true, // this is a default
              loop: true,
              showCursor: true,

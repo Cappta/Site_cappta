@@ -226,7 +226,7 @@ h1 {
 }
 
 #servicos-mobile .flickity-page-dots{
-    bottom: 50px;
+    bottom: 20px;
 }
 
 #servicos-mobile .flickity-page-dots .dot{
@@ -248,7 +248,7 @@ h1 {
 
 #servicos-mobile .conteudo {
     height: 360px;
-    margin: 5px 30px;
+    margin: 10px 30px;
     background-image: url('../images/team-1.jpg');
     background-size: cover;
     border-radius: 10px;
@@ -259,7 +259,7 @@ h1 {
     font-size: 1.5em;
     font-weight: bold;
     color: #19FF85;
-    padding: 0 20px 10px;
+    padding: 0 20px;
     line-height: 1.0;
 }
 
@@ -269,6 +269,7 @@ h1 {
 
 #servicos-mobile p {
     margin: 20px 0 ;
+    padding:0 20px;
 }
 
 /* DEPOIMENTO */
