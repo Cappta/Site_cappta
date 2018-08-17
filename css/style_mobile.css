@@ -13,6 +13,10 @@ h1 {
     padding:  20px;
 }
 
+.text-success {
+    color: #19FF85 !important;
+}
+
 
 #header {
     display: none;
@@ -29,6 +33,17 @@ h1 {
 #header-mobile .conteudo-mobile {
     text-align: center;
     margin-top: 150px;
+    height: 150px;
+}
+
+#header-mobile .button-mobile {
+    text-align: center;
+    margin-top: 50px;
+    height: 150px;
+}
+
+#header-mobile .typed-cursor{
+    color: white;
 }
 
 #header-mobile .btn-success {
@@ -41,10 +56,80 @@ h1 {
     padding: 12px 60px;
 }
 
+#header-mobile h1 {
+    font-weight: bold;
+}
+
 #header-mobile p {
     font-weight: 300;
     padding: 0 50px;
 }
+
+.fa-angle-down {
+    color: #19FF85;
+
+}
+.downArrow{
+    
+	position: relative;
+	top: 100%;
+	left: 100%;
+}
+.bounce {
+	-moz-animation: bounce 3s infinite;
+	-webkit-animation: bounce 3s infinite;
+	animation: bounce 3s infinite;
+}
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+
 
 
 /* NAVBAR */
@@ -54,12 +139,16 @@ h1 {
 
 #navbar-mobile{
     display: block;
+    position: absolute;
+    z-index: 1001;
  
 }
 
 #navbar-mobile .bg-dark {
     background: #262C39 !important;
+    opacity: 0.9;
 }
+
 
 #intro {
     display: none;
@@ -79,7 +168,7 @@ h1 {
 }
 
 #intro-mobile .flickity-page-dots{
-    bottom: 70px;
+    bottom: 60px;
 }
 
 #intro-mobile .carousel-cell{
@@ -89,20 +178,23 @@ h1 {
 }
 
 #intro-mobile .conteudo {
-    margin: 60px 30px 30px;
+    margin: 20px 20px 30px;
     background: rgb(255, 255, 255);
     border-radius: 10px;
-    padding: 30px 20px;
+    padding: 20px 20px;
 }
 
 #intro-mobile h2 {
     font-size: 1.5em;
     font-weight: bold;
     color: #19FF85;
-    padding: 30px 20px 10px;
+    padding: 10px 20px 10px;
     line-height: 1.0;
 }
 
+#intro-mobile p {
+    margin: 20px 0;
+}
 #intro-mobile .flickity-prev-next-button.previous {
     display: none;
 }
@@ -119,7 +211,7 @@ h1 {
 }
 #servicos-mobile {
     display: block;
-    background: rgb(22, 194, 102);
+    background: #19FF85;
     height: 100vh;
 }
 
@@ -128,20 +220,18 @@ h1 {
 }
 
 #servicos-mobile .flickity-viewport {
-    background: rgb(22, 194, 102);
+    background:#19FF85;
     height: 70vh !important;
     padding: 0 20px;
 }
 
 #servicos-mobile .flickity-page-dots{
-    bottom: 10px;
+    bottom: 20px;
 }
 
 #servicos-mobile .flickity-page-dots .dot{
     background-color: #262C39 !important;
 }
-
-
 
 #servicos-mobile .carousel-cell{
     background: transparent;
@@ -157,7 +247,7 @@ h1 {
 }
 
 #servicos-mobile .conteudo {
-    height: 400px;
+    height: 360px;
     margin: 10px 30px;
     background-image: url('../images/team-1.jpg');
     background-size: cover;
@@ -169,10 +259,18 @@ h1 {
     font-size: 1.5em;
     font-weight: bold;
     color: #19FF85;
-    padding: 30px 20px 10px;
+    padding: 0 20px;
     line-height: 1.0;
 }
 
+#servicos-mobile h5 {
+    padding: 0 ;
+}
+
+#servicos-mobile p {
+    margin: 20px 0 ;
+    padding:0 20px;
+}
 
 /* DEPOIMENTO */
 
@@ -304,8 +402,8 @@ padding: 0 20px;
 #menu-mobile-modal a {
     text-align: left;
     color: white;
-    font-size: 16px;
-    padding: 10px 0
+    font-size: 15px;
+    padding: 3px;
 }
 
 #menu-mobile-modal a:hover {
@@ -314,7 +412,7 @@ padding: 0 20px;
 
 
 #menu-mobile-modal .social-menu {
-    padding: 5px 20px;
+    padding: 15px 20px;
 }
 
 
