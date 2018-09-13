@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="node_modules/compiler/default.css">
+    <link rel="stylesheet" href="node_modules/compiler/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/owl/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="node_modules/owl/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="node_modules/animate/animate.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Capptores</title>
+</head>
+
+<body>
+    <header>
+
+        <!-- NAV MOBILE -->
+        <nav class="d-flex d-md-flex d-lg-none">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+                <a class="navbar-brand" href="index.html"><img src="images/cappta_white.png" class="img-fluid"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto d-flex justify-content-start justify-content-md-center align-items-md-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Soluções
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item ml-2" href="#">Cappta Integrado</a>
+                                <a class="dropdown-item ml-2" href="#">Cappta Pague</a>
+                                <a class="dropdown-item ml-2" href="#">Cappta Conciliação</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Diferenciais
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item ml-2" href="#">Portal de vendas</a>
+                                <a class="dropdown-item ml-2" href="#">Redução de taxas</a>
+                                <a class="dropdown-item ml-2" href="homologa.html">Homologue seu software</a>
+                                <a class="dropdown-item ml-2" href="#">Ativação de Bandeiras</a>
+                                <a class="dropdown-item ml-2" href="#">Amigo Cappta Amigo</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Sobre
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item ml-2" href="#">A Cappta</a>
+                                <a class="dropdown-item ml-2" href="capptores.html">Seja um agente de serviços</a>
+                                <a class="dropdown-item ml-2" href="#">Trabalhe na Cappta</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Contato</a>
+                        </li>
+                    </ul>
+                    <div class="row">
+                        <div class="col-7 col-md-6 pt-3 pb-3 d-flex justify-content-start justify-content-md-start">
+                            <div class="btn btn-outline-success">Central de ajuda</div>
+                        </div>
+                        <div class="col-5 offset-md-3 col-md-3 d-flex justify-content-end justify-content-md-around pt-3 pb-3">
+                            <a href="#" class="facebook mt-1 mr-2"><i class="fab fa-2x fa-facebook text-success"></i></a>
+                            <a href="#" class="facebook mt-1 mr-2"><i class="fab fa-2x fa-linkedin text-success"></i></a>
+                            <a href="#" class="facebook mt-1"><i class="fab fa-2x fa-youtube text-success"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </nav>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header border-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body border-0">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 text-light ">
+                                    <h5 class="text-success">Soluções</h5>
+                                    <ul class="nav d-flex flex-column">
+                                        <li class="nav-item"><a>Cappta Integrado</a></li>
+                                        <li class="nav-item"><a>Cappta Pague</a></li>
+                                        <li class="nav-item"><a>Cappta Conciliação</a></li>
+                                        <li class="nav-item"><a>Soluções</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer border-0 d-flex align-items-start justify-content-start">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="btn btn-secondary">Central de ajuda</div>
+                                    <a href="#" class="facebook">
+                                        <i class="fab fa-2x fa-facebook text-light"></i>
+                                    </a>
+                                    <a href="#" class="linkedin ">
+                                        <i class="fab fa-2x fa-linkedin text-light"></i>
+                                    </a>
+                                    <a href="#" class="youtube ">
+                                        <i class="fab fa-2x fa-youtube text-light"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NAV PRINCIPAL -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top d-none d-md-none d-lg-flex" data-aos="fade-up"
+            data-aos-duration="400">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/cappta_white.png" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Inicio
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Soluções
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#"><i class="fas fa-caret-right mr-3 text-success"></i>Cappta
+                                    Integrado</a>
+
+                                <a class="dropdown-item" href="#"><i class="fas fa-caret-right mr-3 text-success"></i>Cappta
+                                    Pague</a>
+
+                                <a class="dropdown-item" href="#"><i class="fas fa-caret-right mr-3 text-success"></i>Conciliação</a>
+
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Diferenciais
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#"><i class="fas fa-caret-right mr-3 text-success"></i>Portal
+                                    de vendas</a>
+
+                                <a class="dropdown-item" href="#"><i class="fas fa-caret-right mr-3 text-success"></i>Redução
+                                    de taxas</a>
+
+                                <a class="dropdown-item" href="#"><i class="fas fa-caret-right mr-3 text-success"></i>Homologue
+                                    seu software</a>
+
+                                <a class="dropdown-item" href="#"><i class="fas fa-caret-right mr-3 text-success"></i>Ativação
+                                    de bandeiras</a>
+
+                                <a class="dropdown-item" href="#"><i class="fas fa-caret-right mr-3 text-success"></i>Amigo
+                                    Cappta Amigo</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Sobre
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#"><i class="fas fa-caret-right mr-3 text-success"></i>A
+                                    Cappta</a>
+
+                                <a class="dropdown-item" href="capptores.html"><i class="fas fa-caret-right mr-3 text-success"></i>Seja
+                                    um agente de serviços</a>
+
+                                <a class="dropdown-item" href="#"><i class="fas fa-caret-right mr-3 text-success"></i>Trabalhe
+                                    na Cappta</a>
+
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+
+                    </ul>
+                    <form class="form-inline my-2 mx-4 my-lg-0">
+                        <button class="btn btn-success my-2 my-sm-0 d-none d-md-flex" type="submit" data-toggle="tooltip"
+                            data-placement="bottom" title="Acesse o seu menu cliente">Já sou cliente</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="bg-dark" style="background-image: url('images/bg-amigo.jpg'); background-size: cover; background-attachment: fixed; background-position: center;">
+            <div class="container" style="padding: 200px 30px;">
+                <div class="row">
+                    <div class="col-lg-5 text-left text-md-center text-lg-left" data-aos="fade-up" data-aos-duration="600">
+                        <h1 class="text-white">Capptores</h1>
+                        <p class="text-white mb-4 mt-4">
+                                Seja um parceiro Cappta e nos ajude a trazer mais gestão, economia e eficiência a milhares de estabelecimentos pelo Brasil 
+                            </p>
+                        <a href="#intro" class="btn btn-success">Saiba mais</a>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="intro" class="bg-light">
+            <div class="container" style="padding: 100px 25px;">
+                <div class="row" data-aos="fade-up" data-aos-duration="600">
+                    <div class="text-center text-md-center text-lg-left align-items-center d-flex flex-column justify-content-center offset-md-1 col-md-10 d-md-flex justify-content-md-start justify-content-lg-center offset-lg-0 col-lg-5 align-items-lg-start">
+                        <h2 class="text-primary">Cappta pelo Brasil</h2>
+                        <p class="mt-4">Temos parceiros presentes em todo o território nacional.
+                            Chamados de Capptores, nossos agentes autorizados são 
+                            a garantia de que qualquer negócio no Brasil tenha por perto. 
+                        </p>
+                        <img src="images/mapa.png" class="img-fluid mt-4">
+                    </div>
+                    <div class="offset-lg-1 col-lg-6 ">
+                        <h2 class="text-primary text-center text-md-center text-lg-left">O que os Capptores dizem?</h2>
+                        <div class="embed-responsive embed-responsive-16by9 mt-5">
+                            <iframe class="embed-responsive-item" width="200px" height="300px" src="https://www.youtube.com/embed/q2X5n6CHHu0"
+                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="valores" class="bg-secondary" style="background-image: url('images/bg-capptores.jpg'); background-size: cover;background-attachment: fixed; background-position: left top;">
+            <div class="container">
+                <div class="row">
+                    <div class="text-center text-md-left text-lg-left d-flex flex-column justify-content-center 
+                    justify-content-lg-center offset-lg-0 col-lg-5 align-items-lg-start"  
+                    data-aos="fade-up" data-aos-duration="600" style="padding: 80px 20px;">
+                        <h2 class="text-primary">Parcerias de excelência</h2>
+                        <p>Procuramos em nossos capptores os mesmos valores que temos dentro da companhia</p>
+                        <div class="d-flex mt-4">
+                            <img src="images/primeiro-lugar.png" class="pr-4">
+                            <h3 class="text-left my-auto">Cliente em <br>primeiro lugar</h3>
+                        </div>
+                        <div class="d-flex mt-4">
+                            <img src="images/disciplina.png" class="pr-4">
+                            <h3 class="text-left my-auto">Disciplina em aprender</h3>
+                        </div>
+                        <div class="d-flex mt-4">
+                            <img src="images/prospect.png" class="pr-4">
+                            <h3 class="text-left my-auto">Garra para prospectar clientes</h3>
+                        </div>
+                    </div>
+                    <div class="offset-lg-1 col-lg-6 d-lg-flex align-items-lg-end"  data-aos="fade-left" data-aos-duration="600">
+                        <img src="images/representante.png" style="width: 100%">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="capptor-form" class="bg-dark" style="background-image: url('images/bg-amigo.jpg'); background-size: cover;background-attachment: fixed; background-position: left top;">
+            <div class="container">
+                <div class="row d-lg-flex align-items-lg-center d-md-flex align-items-md-center" style="padding: 100px 20px;">
+                    <div class="col-lg-5 mb-3">
+                        <h2 class="text-success">Vender Cappta é otimo!</h2>
+                        <p class="text-white ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        </p>
+                        <h2 class="text-success mt-5">Quer ser um Capptor?</h2>
+                        <p class="text-white ">Preencha o formulário para se candidatar e obter mais detalhes. 
+                        </p>
+                    </div>
+                    <div class="offset-lg-1 col-lg-6 col-md-12">
+                        <form>
+                            <div class="row">
+                                <div class="form-group col-lg-6 col-md-6">
+                                    <label for="software" class="text-white">Nome da empresa do Software?</label>
+                                    <input type="text" class="form-control" placeholder="Empresa do software">
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6">
+                                    <label for="nome" class="text-white">Nome do seu Software?</label>
+                                    <input type="text" class="form-control" placeholder="Seu software">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-lg-6 col-md-6">
+                                    <label for="responsavel" class="text-white">Nome do responsável</label>
+                                    <input type="text" class="form-control" placeholder="Nome do responsável">
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6">
+                                    <label for="email" class="text-white">E-mail</label>
+                                    <input type="text" class="form-control" placeholder="E-mail">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-lg-6 col-md-6">
+                                    <label for="telefone" class="text-white">Telefone</label>
+                                    <input type="text" class="form-control" placeholder="Telefone">
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6">
+                                    <label for="nome" class="text-white">Celular</label>
+                                    <input type="text" class="form-control" placeholder="Celular">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-lg-6 col-md-6">
+                                    <label for="site" class="text-white">Qual o site da empresa</label>
+                                    <input type="text" class="form-control" placeholder="Site da empresa">
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6">
+                                    <label for="empresa" class="text-white">Empresa</label>
+                                    <input type="text" class="form-control" placeholder="empresa">
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-success mt-3 pr-5 pl-5">Quero me cadastrar</a>
+                        </form>
+
+                    </div>
+                </div>
+
+        </section>
+        <section id="bandeiras" class="bandeiras bg-light">
+            <div class="container">
+                <div class="row view-bandeiras">
+                    <div class="col-md-12 col-sm-12 d-flex flex-column align-items-center justify-content-center">
+                        <div id="carousel-bandeiras" class="owl-carousel owl-theme">
+                            <div class="img-fluid">
+                                <img src="images/bandeiras/client-1.png">
+                            </div>
+                            <div class="img-fluid">
+                                <img src="images/bandeiras/client-2.png">
+                            </div>
+                            <div class="img-fluid">
+                                <img src="images/bandeiras/client-3.png">
+                            </div>
+                            <div class="img-fluid">
+                                <img src="images/bandeiras/client-4.png">
+                            </div>
+                            <div class="img-fluid">
+                                <img src="images/bandeiras/client-5.png">
+                            </div>
+                            <div class="img-fluid">
+                                <img src="images/bandeiras/client-6.png">
+                            </div>
+                            <div class="img-fluid">
+                                <img src="images/bandeiras/client-1.png">
+                            </div>
+                            <div class="img-fluid">
+                                <img src="images/bandeiras/client-2.png">
+                            </div>
+                            <div class="img-fluid">
+                                <img src="images/bandeiras/client-3.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary">
+        <a Id="voltarTopo" href="#"><i class="fas fa-2x fa-angle-up"></i></a>
+        <div class="container d-md-flex flex-md-column d-lg-flex flex-lg-row text-white">
+            <div class="offset-md-2 col-md-8 offset-lg-0 col-lg-3 text-md-center mb-5 text-lg-left">
+                <a href="#">
+                    <img src="images/cappta_white.png" class="pb-3">
+                </a>
+                <p>Rua Gomes de Carvalho, 1609 Vila Olímpia - São Paulo - SP CEP: 04547-006 © 2017 Cappta. Todos os
+                    direitos
+                    reservados.
+                </p>
+                <h5 class="mb-3 text-success">Siga-nos</h5>
+                <a href="#" class="facebook">
+                    <i class="fab fa-2x fa-facebook text-light"></i>
+                </a>
+                <a href="#" class="linkedin ml-3">
+                    <i class="fab fa-2x fa-linkedin text-light"></i>
+                </a>
+                <a href="#" class="youtube ml-3">
+                    <i class="fab fa-2x fa-youtube text-light"></i>
+                </a>
+            </div>
+            <div class="offset-md-2 col-md-8 offset-lg-0 col-lg-3 text-md-center mb-5 text-lg-left">
+                <h5 class="text-success">Links úteis</h5>
+                <ul>
+                    <li>
+                        <a href="#">Cappta Integrado</a>
+                    </li>
+                    <li>
+                        <a href="#">Cappta Pague</a>
+                    </li>
+                    <li>
+                        <a href="#">Mensalidade Grátis</a>
+                    </li>
+                    <li>
+                        <a href="#">Homologue seu Software</a>
+                    </li>
+                    <li>
+                        <a href="#">Sobre a Cappta</a>
+                    </li>
+                </ul>
+                <div class="btn btn-success">Central de ajuda</div>
+            </div>
+            <div class="offset-md-2 col-md-8 offset-lg-0 col-lg-3 text-md-center mb-5 text-lg-left">
+                <h5 class="text-success">Relacionamento com o cliente</h5>
+                <p>atende@cappta.com.br
+                    <br>0800 773 6105</p>
+                <h5 class="text-success">Comercial</h5>
+                <p>euquero@cappta.com.br</p>
+                <h5 class="text-success">Atendimento a parceiros</h5>
+                <p>0800 227 7867</p>
+            </div>
+            <div class="offset-md-2 col-md-8 offset-lg-0 col-lg-3 text-center">
+                <a href="#">
+                    <img src="images/afrac.png" class="mb-3">
+                </a>
+                <p class="text-center mb-0">Vencedora do primeiro prêmio Afrac de Excelência (Biênio 2017/2018) na
+                    categoria
+                    Meios de Pagamento!</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/owl/dist/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        $('#carousel1').owlCarousel({
+            animateIn: 'fadeIn',
+            animateOut: 'fadeOut',
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+                320: {
+                    items: 1,
+                    nav: true
+                },
+                375: {
+                    items: 1,
+                    nav: false
+                },
+                768: {
+                    items: 1,
+                    nav: true
+                },
+                1000: {
+                    items: 1,
+                    nav: true,
+                    loop: false
+                }
+            }
+        })
+
+        $('#carousel2').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+                320: {
+                    items: 1,
+                    nav: true
+                },
+                375: {
+                    items: 1,
+                    nav: false
+                },
+                768: {
+                    items: 1,
+                    nav: true
+                },
+                1000: {
+                    items: 1,
+                    nav: true,
+                    loop: false
+                }
+            }
+        })
+
+        $('#carousel-bandeiras').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: false,
+            responsive: {
+                320: {
+                    items: 3,
+                    nav: true
+                },
+                375: {
+                    items: 3,
+                    nav: false
+                },
+                768: {
+                    items: 6,
+                    nav: true
+                },
+                1000: {
+                    items: 9,
+                    nav: true,
+                    loop: false
+                }
+            }
+        })
+    </script>
+    <script>
+        /* SCRIPT JQUERY PARA TROCAR DE COR NAVBAR */
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('.navbar').css("background-color", "rgba(38, 44, 57, 0.8)")
+            } else {
+                $('.navbar').css("background-color", "transparent")
+            }
+        });
+
+        // MODAL
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
+    </script>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) {
+                document.getElementById("voltarTopo").style.display = "block";
+            } else {
+                document.getElementById("voltarTopo").style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+
+</html>
