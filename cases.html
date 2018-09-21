@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="node_modules/compiler/default.css">
+    <link rel="stylesheet" href="node_modules/compiler/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/owl/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="node_modules/owl/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="node_modules/animate/animate.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Cappta Cases</title>
+</head>
+
+<body>
+    <header>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content bg-success">
+                    <div class="modal-header border-0">
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body d-flex flex-column align-items-center justify-content-center">
+                        <h3 class="text-center text-weight-bold">A solução ideal para o seu negócio</h3>
+                    </div>
+                    <div class="modal-body d-flex flex-column align-items-center justify-content-center">
+                        <div class="btn btn-primary">Faturamento abaixo de 50 mil</div>
+                        <div class="btn btn-primary m-3">Faturamento acima de 50 mil</div>
+                        <div class="btn btn-primary">Tenho uma rede de lojas</div>
+                    </div>
+                    <div class="modal-footer d-flex flex-column align-items-center justify-content-center border-0">
+                        <img src="images/POS.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NAV MOBILE -->
+        <nav class="d-flex d-md-flex d-lg-none">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+                <a class="navbar-brand" href="index.html"><img src="images/cappta_white.png" class="img-fluid"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto d-flex justify-content-start justify-content-md-center align-items-md-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Soluções
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item ml-2" href="integrado.html">Cappta Integrado</a>
+                                <a class="dropdown-item ml-2" href="#">Cappta Pague</a>
+
+                                <a class="dropdown-item ml-2" href="mobile.html">Cappta Mobile</a>
+                                <a class="dropdown-item ml-2" href="#">Conciliação</a>
+
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Diferenciais
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item ml-2" href="#">Portal de vendas</a>
+                                <a class="dropdown-item ml-2" href="reduzir-taxas.html">Redução de taxas</a>
+                                <a class="dropdown-item ml-2" href="#">Homologue seu software</a>
+                                <a class="dropdown-item ml-2" href="#">Ativação de Bandeiras</a>
+                                <a class="dropdown-item ml-2" href="amigo.html">Amigo Cappta Amigo</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Sobre
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item ml-2" href="sobre.html">A Cappta</a>
+                                <a class="dropdown-item ml-2" href="capptores.html">Seja um agente de serviços</a>
+                                <a class="dropdown-item ml-2" href="#">Trabalhe na Cappta</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="contato">Contato</a>
+                        </li>
+                    </ul>
+                    <div class="row">
+                        <div class="col-7 col-md-6 pt-3 pb-3 d-flex justify-content-start justify-content-md-start">
+                            <div class="btn btn-outline-success">Central de ajuda</div>
+                        </div>
+                        <div class="col-5 offset-md-3 col-md-3 d-flex justify-content-end justify-content-md-around pt-3 pb-3">
+                            <a href="#" class="facebook mt-1 mr-2"><i class="fab fa-2x fa-facebook text-success"></i></a>
+                            <a href="#" class="facebook mt-1 mr-2"><i class="fab fa-2x fa-linkedin text-success"></i></a>
+                            <a href="#" class="facebook mt-1"><i class="fab fa-2x fa-youtube text-success"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </nav>
+
+        <!-- NAV PRINCIPAL -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top d-none d-md-none d-lg-flex" data-aos="fade-up"
+            data-aos-duration="400">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/cappta_white.png" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Inicio
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Soluções
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="integrado.html"><i class="fas fa-caret-right mr-3 text-success"></i>Cappta
+                                    Integrado</a>
+
+                                <a class="dropdown-item" href="#"><i class="fas fa-caret-right mr-3 text-success"></i>Cappta
+                                    Pague</a>
+                                <a class="dropdown-item" href="mobile.html"><i class="fas fa-caret-right mr-3 text-success"></i>Cappta
+                                    Mobile</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-caret-right mr-3 text-success"></i>Conciliação</a>
+
+
+
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Diferenciais
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#"><i class="fas fa-caret-right mr-3 text-success"></i>Portal
+                                    de vendas</a>
+
+                                <a class="dropdown-item" href="reduzir-taxas.html"><i class="fas fa-caret-right mr-3 text-success"></i>Redução
+                                    de taxas</a>
+
+                                <a class="dropdown-item" href="#"><i class="fas fa-caret-right mr-3 text-success"></i>Homologue
+                                    seu software</a>
+
+                                <a class="dropdown-item" href="#"><i class="fas fa-caret-right mr-3 text-success"></i>Ativação
+                                    de bandeiras</a>
+
+                                <a class="dropdown-item" href="amigo.html"><i class="fas fa-caret-right mr-3 text-success"></i>Amigo
+                                    Cappta Amigo</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Sobre
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="sobre.html"><i class="fas fa-caret-right mr-3 text-success"></i>A
+                                    Cappta</a>
+
+                                <a class="dropdown-item" href="capptores.html"><i class="fas fa-caret-right mr-3 text-success"></i>Seja
+                                    um agente de serviços</a>
+
+                                <a class="dropdown-item" href="#"><i class="fas fa-caret-right mr-3 text-success"></i>Trabalhe
+                                    na Cappta</a>
+
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+
+                    </ul>
+                    <form class="form-inline my-2 mx-4 my-lg-0">
+                        <button class="btn btn-success my-2 my-sm-0 d-none d-md-flex" type="submit" data-toggle="tooltip"
+                            data-placement="bottom" title="Acesse o seu menu cliente">Já sou cliente</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="bg-dark" style="background-image: url('images/bg-integrado.jpg'); background-size: cover;background-attachment: fixed; background-position: left top;">
+            <div class="container" style="padding: 150px 30px;">
+                <div class="row">
+                    <div class="col-lg-5 text-left text-md-center text-lg-left" data-aos="fade-up" data-aos-duration="600">
+                        <h1 class="text-white">Cases Cappta</h1>
+                        <p class="lead text-white mb-4 mt-4">
+                           Lorem ipsum dolor amet sit</p>
+                        <a class="btn btn-success">Saiba mais</a>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <div class="container" style="padding: 100px 20px;">
+                <div class="row text-md-center text-lg-left">
+                    <div class="col-lg-4 mb-5">
+                        <img src="images/case-1.png" class="img-fluid">
+                        <h2 class="mt-4 text-primary">Empório da Cerveja</h2>
+                        <p class="mt-3 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                        <a href="#" class="btn btn-success" alt="video" data-toggle="modal"
+                        data-target="#modal4"><i class="fa fa-play-circle mr-3"></i>Assistir video completo</a>
+                        <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                        aria-hidden="true">
+                        
+                        <div class="modal-dialog modal-lg" role="document">
+                            <!--Content-->
+                            <div class="modal-content">
+                                <!--Body-->
+                                <div class="modal-body mb-0 p-0">
+                                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ottFygWcxZ0"
+                                            allowfullscreen></iframe>
+                                    </div>
+
+                                </div>
+                                <!--Footer-->
+                                <div class="modal-footer justify-content-center bg-success">
+                                    <span class="mr-4">Compartilhe!</span>
+                                    <a><i class="fab fa-2x fa-facebook-square text-primary"></i></a>
+                                    <!--Twitter-->
+                                    <a><i class="fab fa-2x fa-linkedin text-primary"></i></a>
+                                    <!--Google +-->
+                                    <a><i class="fab fa-2x fa-youtube text-primary"></i></a>
+
+                                    <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                                        data-dismiss="modal">Fechar</button>
+                                </div>
+
+                            </div>
+                            <!--/.Content-->
+
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-4 mb-5">
+                            <img src="images/case-nutribox.png" class="img-fluid">
+                            <h2 class="mt-4 text-primary">Nutribox</h2>
+                            <p class="mt-3 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            </p>
+                            <a href="#" class="btn btn-success" alt="video" data-toggle="modal"
+                            data-target="#modal4"><i class="fa fa-play-circle mr-3"></i>Assistir video completo</a>
+                            <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                            aria-hidden="true">
+                            
+                            <div class="modal-dialog modal-lg" role="document">
+                                <!--Content-->
+                                <div class="modal-content">
+                                    <!--Body-->
+                                    <div class="modal-body mb-0 p-0">
+                                        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ottFygWcxZ0"
+                                                allowfullscreen></iframe>
+                                        </div>
+    
+                                    </div>
+                                    <!--Footer-->
+                                    <div class="modal-footer justify-content-center bg-success">
+                                        <span class="mr-4">Compartilhe!</span>
+                                        <a><i class="fab fa-2x fa-facebook-square text-primary"></i></a>
+                                        <!--Twitter-->
+                                        <a><i class="fab fa-2x fa-linkedin text-primary"></i></a>
+                                        <!--Google +-->
+                                        <a><i class="fab fa-2x fa-youtube text-primary"></i></a>
+    
+                                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                                            data-dismiss="modal">Fechar</button>
+                                    </div>
+    
+                                </div>
+                                <!--/.Content-->
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-5">
+                            <img src="images/case-zinzane.png" class="img-fluid">
+                            <h2 class="mt-4 text-primary">Zinzane</h2>
+                            <p class="mt-3 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            </p>
+                            <a href="#" class="btn btn-success" alt="video" data-toggle="modal"
+                            data-target="#modal4"><i class="fa fa-play-circle mr-3"></i>Assistir video completo</a>
+                            <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                            aria-hidden="true">
+                            
+                            <div class="modal-dialog modal-lg" role="document">
+                                <!--Content-->
+                                <div class="modal-content">
+                                    <!--Body-->
+                                    <div class="modal-body mb-0 p-0">
+                                        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ottFygWcxZ0"
+                                                allowfullscreen></iframe>
+                                        </div>
+    
+                                    </div>
+                                    <!--Footer-->
+                                    <div class="modal-footer justify-content-center bg-success">
+                                        <span class="mr-4">Compartilhe!</span>
+                                        <a><i class="fab fa-2x fa-facebook-square text-primary"></i></a>
+                                        <!--Twitter-->
+                                        <a><i class="fab fa-2x fa-linkedin text-primary"></i></a>
+                                        <!--Google +-->
+                                        <a><i class="fab fa-2x fa-youtube text-primary"></i></a>
+    
+                                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                                            data-dismiss="modal">Fechar</button>
+                                    </div>
+    
+                                </div>
+                                <!--/.Content-->
+    
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row text-md-center text-lg-left mt-5">
+                    <div class="col-lg-4 mb-5">
+                                <img src="images/case-reicar.png" class="img-fluid">
+                                <h2 class="mt-4 text-primary">Rei Car</h2>
+                                <p class="mt-3 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                </p>
+                                <a href="#" class="btn btn-success" alt="video" data-toggle="modal"
+                                data-target="#modal4"><i class="fa fa-play-circle mr-3"></i>Assistir video completo</a>
+                                <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                                aria-hidden="true">
+                                
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <!--Content-->
+                                    <div class="modal-content">
+                                        <!--Body-->
+                                        <div class="modal-body mb-0 p-0">
+                                            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ottFygWcxZ0"
+                                                    allowfullscreen></iframe>
+                                            </div>
+        
+                                        </div>
+                                        <!--Footer-->
+                                        <div class="modal-footer justify-content-center bg-success">
+                                            <span class="mr-4">Compartilhe!</span>
+                                            <a><i class="fab fa-2x fa-facebook-square text-primary"></i></a>
+                                            <!--Twitter-->
+                                            <a><i class="fab fa-2x fa-linkedin text-primary"></i></a>
+                                            <!--Google +-->
+                                            <a><i class="fab fa-2x fa-youtube text-primary"></i></a>
+        
+                                            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                                                data-dismiss="modal">Fechar</button>
+                                        </div>
+        
+                                    </div>
+                                    <!--/.Content-->
+        
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-lg-4 mb-5">
+                                    <img src="images/case-cfc-bh.png" class="img-fluid">
+                                    <h2 class="mt-4 text-primary">CFC BH</h2>
+                                    <p class="mt-3 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                        ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                    </p>
+                                    <a href="#" class="btn btn-success" alt="video" data-toggle="modal"
+                                    data-target="#modal4"><i class="fa fa-play-circle mr-3"></i>Assistir video completo</a>
+                                    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                                    aria-hidden="true">
+                                    
+                                    <div class="modal-dialog modal-lg" role="document">
+                                        <!--Content-->
+                                        <div class="modal-content">
+                                            <!--Body-->
+                                            <div class="modal-body mb-0 p-0">
+                                                <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ottFygWcxZ0"
+                                                        allowfullscreen></iframe>
+                                                </div>
+            
+                                            </div>
+                                            <!--Footer-->
+                                            <div class="modal-footer justify-content-center bg-success">
+                                                <span class="mr-4">Compartilhe!</span>
+                                                <a><i class="fab fa-2x fa-facebook-square text-primary"></i></a>
+                                                <!--Twitter-->
+                                                <a><i class="fab fa-2x fa-linkedin text-primary"></i></a>
+                                                <!--Google +-->
+                                                <a><i class="fab fa-2x fa-youtube text-primary"></i></a>
+            
+                                                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                                                    data-dismiss="modal">Fechar</button>
+                                            </div>
+            
+                                        </div>
+                                        <!--/.Content-->
+            
+                                    </div>
+                                </div>
+                    </div>
+                    <div class="col-lg-4 mb-5">
+                                    <img src="images/case-papelaria.png" class="img-fluid">
+                                    <h2 class="mt-4 text-primary">Van Gogh Papelaria</h2>
+                                    <p class="mt-3 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                        ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                    </p>
+                                    <a href="#" class="btn btn-success" alt="video" data-toggle="modal"
+                                    data-target="#modal4"><i class="fa fa-play-circle mr-3"></i>Assistir video completo</a>
+                                    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                                    aria-hidden="true">
+                                    
+                                    <div class="modal-dialog modal-lg" role="document">
+                                        <!--Content-->
+                                        <div class="modal-content">
+                                            <!--Body-->
+                                            <div class="modal-body mb-0 p-0">
+                                                <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5-OgFMhvKv4"
+                                                        allowfullscreen></iframe>
+                                                </div>
+            
+                                            </div>
+                                            <!--Footer-->
+                                            <div class="modal-footer justify-content-center bg-success">
+                                                <span class="mr-4">Compartilhe!</span>
+                                                <a><i class="fab fa-2x fa-facebook-square text-primary"></i></a>
+                                                <!--Twitter-->
+                                                <a><i class="fab fa-2x fa-linkedin text-primary"></i></a>
+                                                <!--Google +-->
+                                                <a><i class="fab fa-2x fa-youtube text-primary"></i></a>
+            
+                                                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                                                    data-dismiss="modal">Fechar</button>
+                                            </div>
+            
+                                        </div>
+                                        <!--/.Content-->
+            
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary">
+        <a Id="voltarTopo" href="#"><i class="fas fa-2x fa-angle-up"></i></a>
+        <div class="container d-md-flex flex-md-column d-lg-flex flex-lg-row text-white">
+            <div class="offset-md-2 col-md-8 offset-lg-0 col-lg-3 text-md-center mb-5 text-lg-left">
+                <a href="#">
+                    <img src="images/cappta_white.png" class="pb-3">
+                </a>
+                <p>Rua Gomes de Carvalho, 1609 Vila Olímpia - São Paulo - SP CEP: 04547-006 © 2017 Cappta. Todos os
+                    direitos
+                    reservados.
+                </p>
+                <h5 class="mb-3 text-success">Siga-nos</h5>
+                <a href="#" class="facebook">
+                    <i class="fab fa-2x fa-facebook text-light"></i>
+                </a>
+                <a href="#" class="linkedin ml-3">
+                    <i class="fab fa-2x fa-linkedin text-light"></i>
+                </a>
+                <a href="#" class="youtube ml-3">
+                    <i class="fab fa-2x fa-youtube text-light"></i>
+                </a>
+            </div>
+            <div class="offset-md-2 col-md-8 offset-lg-0 col-lg-3 text-md-center mb-5 text-lg-left">
+                <h5 class="text-success">Links úteis</h5>
+                <ul>
+                    <li>
+                        <a href="#">Cappta Integrado</a>
+                    </li>
+                    <li>
+                        <a href="#">Cappta Pague</a>
+                    </li>
+                    <li>
+                        <a href="#">Mensalidade Grátis</a>
+                    </li>
+                    <li>
+                        <a href="#">Homologue seu Software</a>
+                    </li>
+                    <li>
+                        <a href="#">Sobre a Cappta</a>
+                    </li>
+                </ul>
+                <div class="btn btn-success">Central de ajuda</div>
+            </div>
+            <div class="offset-md-2 col-md-8 offset-lg-0 col-lg-3 text-md-center mb-5 text-lg-left">
+                <h5 class="text-success">Relacionamento com o cliente</h5>
+                <p>atende@cappta.com.br
+                    <br>0800 773 6105</p>
+                <h5 class="text-success">Comercial</h5>
+                <p>euquero@cappta.com.br</p>
+                <h5 class="text-success">Atendimento a parceiros</h5>
+                <p>0800 227 7867</p>
+            </div>
+            <div class="offset-md-2 col-md-8 offset-lg-0 col-lg-3 text-center">
+                <a href="#">
+                    <img src="images/afrac.png" class="mb-3">
+                </a>
+                <p class="text-center mb-0">Vencedora do primeiro prêmio Afrac de Excelência (Biênio 2017/2018) na
+                    categoria
+                    Meios de Pagamento!</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/owl/dist/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        $('#carousel1').owlCarousel({
+            animateIn: 'fadeIn',
+            animateOut: 'fadeOut',
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+                320: {
+                    items: 1,
+                    nav: true
+                },
+                375: {
+                    items: 1,
+                    nav: false
+                },
+                768: {
+                    items: 1,
+                    nav: true
+                },
+                1000: {
+                    items: 1,
+                    nav: true,
+                    loop: false
+                }
+            }
+        })
+
+        $('#carousel2').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+                320: {
+                    items: 1,
+                    nav: true
+                },
+                375: {
+                    items: 1,
+                    nav: false
+                },
+                768: {
+                    items: 1,
+                    nav: true
+                },
+                1000: {
+                    items: 1,
+                    nav: true,
+                    loop: false
+                }
+            }
+        })
+
+        $('#carousel-bandeiras').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: false,
+            responsive: {
+                320: {
+                    items: 3,
+                    nav: true
+                },
+                375: {
+                    items: 3,
+                    nav: false
+                },
+                768: {
+                    items: 6,
+                    nav: true
+                },
+                1000: {
+                    items: 9,
+                    nav: true,
+                    loop: false
+                }
+            }
+        })
+    </script>
+    <script>
+        /* SCRIPT JQUERY PARA TROCAR DE COR NAVBAR */
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('.navbar').css("background-color", "rgba(38, 44, 57, 0.8)")
+            } else {
+                $('.navbar').css("background-color", "transparent")
+            }
+        });
+
+        // MODAL
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
+    </script>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) {
+                document.getElementById("voltarTopo").style.display = "block";
+            } else {
+                document.getElementById("voltarTopo").style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+
+</html>
