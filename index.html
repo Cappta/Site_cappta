@@ -119,7 +119,7 @@
         </nav>
 
         <!-- NAV PRINCIPAL -->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top d-none d-md-none d-lg-flex" data-aos="fade-up"
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top d-none d-md-none d-lg-flex" data-aos="fade-down"
             data-aos-duration="400">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
@@ -215,43 +215,60 @@
     </header>
 
     <main>
-        <section class="bg-dark" style="background-image: url('images/bg-video.jpg'); background-size: cover; background-attachment: fixed; background-position: left; padding: 100px 0 0;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 text-left text-md-center text-lg-left my-5" data-aos="fade-up" data-aos-duration="600">
-                        <h1 class="text-white mt-4">Soluções integradas de pagamento</h1>
-                        <p class="lead text-white mb-4 mt-4">Capture suas vendas em cartão com a empresa que mudou o
-                            mercado!</p>
-                        <a href="#intro" class="btn btn-outline-success mb-lg-1 mb-5">Saiba mais</a>
-
+        <section class="v-header container">
+                    <div class="fullscreen-video-wrap">
+                      <video src="images/videos/verde-abstrato.mp4" autoplay="true" loop="true" muted>
+                    </video>
                     </div>
-                    <div class="offset-lg-1 col-lg-6 text-left text-md-center text-lg-left d-none d-lg-flex flex-lg-column" data-aos="fade-left" data-aos-duration="600">
-                        <img src="images/senior.png" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-
+                    <div class="header-overlay"></div>
+                        <div class="col-lg-6 header-content text-lg-left text-md-center">
+                      <h1>Soluções integradas de pagamento</h1>
+                      <p class="mb-5 mt-3 lead">Capture suas vendas em cartão com a empresa que mudou o mercado.</p>
+                      <a href="#" class="btn btn-success">Saiba mais</a>
+                        </div>
+                        <div class="col-lg-6 header-content text-lg-left mt-5 d-none d-lg-block" data-aos="fade-up"
+                        data-aos-duration="400">
+                            <img src="images/senior.png" class="img-fluid mt-5 my-5">
+                        </div>
         </section>
 
         <section id="menu-servicos">
             <div class="container">
-                <div class="col-lg-12">
-                    <div class="menu-float-servicos" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
-                        data-aos-duration="600">
+                <div class="col-lg-12 col-md-10 pl-md-5">
+                    <div class="menu-float-servicos ml-md-4">
                         <div class="card bg-success d-none d-md-flex">
-                            <div class="card-body">
+                            
+                            <!-- DESKTOP -->
+                            <div class="card-body text-center text-md-left text-lg-center d-none d-lg-block">
                                 <div class="row">
-                                    <div class="col-lg-3 ml-5 offset-md-0 col-md-12 m-0">
-                                        <h4 class="text-primary">Temos a soluçao ideal para o seu negócio!</h4>
-                                    </div>
-                                    <div class="col-lg-8 d-lg-flex justify-content-lg-end my-auto col-md-12">
-                                        <a href="pague.html" class="btn btn-primary mr-1">Faturo abaixo de 50 mil</a>
-                                        <a href="integrado.html" class="btn btn-primary mr-1">Faturo acima de 50 mil</a>
-                                        <a href="redes-de-lojas.html" class="btn btn-primary mr-1">Rede de lojas</a>
+                                    <div class="col-lg-12">
+                                        <h4 class="mb-3">Temos a solução ideal para o seu negócio!</h4>
                                     </div>
                                 </div>
-
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12">
+                                        <a href="pague.html" class="btn btn-primary m-1">Faturo abaixo de 50 mil</a>
+                                        <a href="integrado.html" class="btn btn-primary m-1">Faturo acima de 50 mil</a>
+                                        <a href="redes-de-lojas.html" class="btn btn-primary mr-1">Tenho uma rede de lojas</a>
+                                    </div>
+                                </div>
                             </div>
+
+                            <!-- TABLET -->
+                            <div class="card-body text-center text-md-left text-lg-center d-block d-lg-none">
+                                    <div class="row">
+                                        <div class="col-md-6 my-auto">
+                                            <h3 class="ml-3">Temos a solução ideal para o seu negócio!</h3>
+                                        </div>
+                                        <div class="col-md-6 text-left">
+                                            <a href="pague.html" class="btn btn-primary m-2">Faturo abaixo de 50 mil</a>
+                                            <a href="integrado.html" class="btn btn-primary m-2">Faturo acima de 50 mil</a>
+                                            <a href="redes-de-lojas.html" class="btn btn-primary m-2">Tenho uma rede de lojas</a>
+                                        </div>
+                                    </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -333,7 +350,7 @@
                         <div class="card border-0" style="background-image: url('images/mobilidade.jpg'); background-size: cover; background-position: right;">
                             <div class="card-body pl-lg-5 pr-lg-5">
                               <h4 class="card-title text-success">Para vender onde <br>quiser</h4>
-                              <p class="card-text text-white pr-lg-5">Transforme qualquer dispositivo Android em um caixa independente!
+                              <p class="card-text text-white pr-lg-5 pb-md-5 pb-lg-0">Transforme qualquer dispositivo Android em um caixa independente!
                                 Ganhe eficiência com a integração <br>sem comprometer a mobilidade na hora<br> do pagamento.
                                 
                                 </p>
@@ -345,8 +362,8 @@
                         <div class="card border-0" style="background-image: url('images/multiplataforma.jpg'); background-size: cover; background-position: right;">
                             <div class="card-body pl-lg-5 pr-lg-4 pl-md-5">
                               <h4 class="card-title text-success">Para dividir com outros profissionais</h4>
-                              <p class="card-text text-white" style="margin-bottom: 60px;">Realize pagamentos para diferentes profissionais em uma mesma solução.</p>
-                              <a href="pague.html" class="btn btn-success"><i class="fa fa-arrow-right"></i></a>
+                              <p class="card-text text-white mb-md-5">Realize pagamentos para <br>diferentes profissionais em uma mesma solução.</p>
+                              <a href="pague.html" class="btn btn-success mt-md-4 mt-lg-3"><i class="fa fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -365,16 +382,15 @@
 
         <section id="depoimentos" style="background-image: url('images/bg-depo.jpg'); background-size: cover;background-attachment: fixed; background-position: left top;">
             <div class="container">
-                <div class="row d-flex" style="padding: 100px 20px;">
+                <div class="row d-flex text-lg-left text-md-center" style="padding: 100px 20px;">
                     <div class="col-lg-5 order-lg-1 order-2">
                         <i class="fas fa-3x fa-award text-success mb-3"></i>
                         <h2 class="text-white mb-3">Experiência de quem <br>usa Cappta</h2>
                         <p class="text-white font-italic">"Escolhemos a Cappta por uma questão de praticidade e boa reputação."
-                        <span class="mb-3">Vinicius - Empório da Cerveja</span></p>
+                        <span class="mb-3">Leonardo Longo - Empório da Cerveja</span></p>
                         <a href="cases.html" class="btn btn-success mt-3">Veja mais depoimentos</a>
                     </div>
-                    
-                    <div class="offset-lg-1 col-lg-6 order-lg-2 order-1">
+                    <div class="offset-lg-1 col-lg-6 order-lg-2 order-1 ">
                         <div class="embed-responsive embed-responsive-16by9 mb-5">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/ottFygWcxZ0" frameborder="0" 
                             allow="autoplay; encrypted-media" allowfullscreen>
@@ -433,70 +449,81 @@
     </main>
 
     <footer class="bg-primary">
-            <a Id="voltarTopo" href="#"><i class="fas fa-2x fa-angle-up"></i></a>
-            <div class="container d-md-flex flex-md-column d-lg-flex flex-lg-row text-white">
-                <div class="offset-md-2 col-md-8 offset-lg-0 col-lg-3 text-md-center mb-5 text-lg-left">
-                    <a href="#">
-                        <img src="images/cappta_white.png" class="pb-3">
-                    </a>
-                    <p>Rua Gomes de Carvalho, 1609 Vila Olímpia - São Paulo - SP CEP: 04547-006 © 2017 Cappta. Todos os
-                        direitos
-                        reservados.
-                    </p>
-                    <h5 class="mb-3 text-success">Siga-nos</h5>
-                    <a href="https://pt-br.facebook.com/cappta" target="_blank" class="facebook">
-                        <i class="fab fa-2x fa-facebook text-light"></i>
-                    </a>
-                    <a href="https://linkedin.com/company/cappta/" target="_blank" class="linkedin ml-3">
-                        <i class="fab fa-2x fa-linkedin text-light"></i>
-                    </a>
-                    <a href="https://www.youtube.com/capptasa" target="_blank" class="youtube ml-3">
-                        <i class="fab fa-2x fa-youtube text-light"></i>
-                    </a>
-                </div>
-                <div class="offset-md-2 col-md-8 offset-lg-0 col-lg-3 text-md-center mb-5 text-lg-left">
-                    <h5 class="text-success">Links úteis</h5>
-                    <ul>
-                        <li>
-                            <a href="integrado.html">Cappta Integrado</a>
-                        </li>
-                        <li>
-                            <a href="pague.html">Cappta Pague</a>
-                        </li>
-                        <li>
-                            <a href="amigo.html">Mensalidade Grátis</a>
-                        </li>
-                        <li>
-                            <a href="homologa.html">Homologue seu Software</a>
-                        </li>
-                        <li>
-                            <a href="sobre.html">Sobre a Cappta</a>
-                        </li>
-                        <li>
-                            <a href="https://startcontrol.com/suportetef#" target="_blank">Preciso de suporte</a>
-                        </li>
-                    </ul>
-                    <a href="https://cappta.force.com/ajuda/s/" target="_blank"><div class="btn btn-success">Central de ajuda</div></a>
-                </div>
-                <div class="offset-md-2 col-md-8 offset-lg-0 col-lg-3 text-md-center mb-5 text-lg-left">
-                    <h5 class="text-success">Relacionamento com o cliente</h5>
-                    <p>atende@cappta.com.br
-                        <br>0800 773 6105</p>
-                    <h5 class="text-success">Comercial</h5>
-                    <p>euquero@cappta.com.br</p>
-                    <h5 class="text-success">Atendimento a parceiros</h5>
-                    <p>0800 227 7867</p>
-                </div>
-                <div class="offset-md-2 col-md-8 offset-lg-0 col-lg-3 text-center">
-                    <a href="#">
-                        <img src="images/afrac.png" class="mb-3">
-                    </a>
-                    <p class="text-center mb-0">Vencedora do primeiro prêmio Afrac de Excelência (Biênio 2017/2018) na
-                        categoria
-                        Meios de Pagamento!</p>
-                </div>
+            <div class="container-fluid">
+                    <a Id="voltarTopo" href="#"><i class="fas fa-2x fa-angle-up"></i></a>
+                    <div class="container d-md-flex flex-md-column d-lg-flex flex-lg-row text-white">
+                        <div class="offset-md-2 col-md-8 offset-lg-0 col-lg-3 text-md-center mb-5 text-lg-left">
+                            <a href="#">
+                                <img src="images/cappta_white.png" class="pb-3">
+                            </a>
+                            <p>Rua Gomes de Carvalho, 1609 <br>Vila Olímpia - São Paulo - SP <br>CEP: 04547-006 <br>
+                            </p>
+                            <h5 class="mb-3 text-success">Siga-nos</h5>
+                            <a href="https://pt-br.facebook.com/cappta" target="_blank" class="facebook">
+                                <i class="fab fa-2x fa-facebook text-light"></i>
+                            </a>
+                            <a href="https://linkedin.com/company/cappta/" target="_blank" class="linkedin ml-3">
+                                <i class="fab fa-2x fa-linkedin text-light"></i>
+                            </a>
+                            <a href="https://www.youtube.com/capptasa" target="_blank" class="youtube ml-3">
+                                <i class="fab fa-2x fa-youtube text-light"></i>
+                            </a>
+                        </div>
+                        <div class="offset-md-2 col-md-8 offset-lg-0 col-lg-3 text-md-center mb-5 text-lg-left">
+                            <h5 class="text-success">Links úteis</h5>
+                            <ul>
+                                <li>
+                                    <a href="integrado.html">Cappta Integrado</a>
+                                </li>
+                                <li>
+                                    <a href="pague.html">Cappta Pague</a>
+                                </li>
+                                <li>
+                                    <a href="amigo.html">Mensalidade Grátis</a>
+                                </li>
+                                <li>
+                                    <a href="homologa.html">Homologue seu Software</a>
+                                </li>
+                                <li>
+                                    <a href="sobre.html">Sobre a Cappta</a>
+                                </li>
+                                <li>
+                                    <a href="https://startcontrol.com/suportetef#" target="_blank">Preciso de suporte</a>
+                                </li>
+                            </ul>
+                            <a href="https://cappta.force.com/ajuda/s/" target="_blank"><div class="btn btn-success">Central de ajuda</div></a>
+                        </div>
+                        <div class="offset-md-2 col-md-8 offset-lg-0 col-lg-3 text-md-center mb-5 text-lg-left">
+                            <h5 class="text-success">Relacionamento com o cliente</h5>
+                            <p>atende@cappta.com.br
+                                <br>0800 773 6105</p>
+                            <h5 class="text-success">Comercial</h5>
+                            <p>euquero@cappta.com.br</p>
+                            <h5 class="text-success">Atendimento a parceiros</h5>
+                            <p>0800 227 7867</p>
+                        </div>
+                        <div class="offset-md-2 col-md-8 offset-lg-0 col-lg-3 text-center">
+                            <a href="#">
+                                <img src="images/afrac.png" class="mb-3">
+                            </a>
+                            <p class="text-center mb-0">Vencedora do primeiro prêmio Afrac de Excelência (Biênio 2017/2018) na
+                                categoria
+                                Meios de Pagamento!</p>
+                        </div>
+                    </div>
             </div>
+
     </footer>
+
+    <section>
+            <div class="container-fluid" style="background: rgb(1, 24, 16)">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <p class="text-light m-3">© 2018 Cappta. Todos os direitos reservados.</p>
+                        </div>
+                    </div>
+                </div>
+    </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -526,7 +553,7 @@
             margin: 10,
             autoplay: true,
             autoplayTimeout: 6000,
-            autoplayHoverPause: false,
+            autoplayHoverPause: true,
             responsiveClass: true,
             responsive: {
                 320: {
@@ -578,7 +605,7 @@
             loop: true,
             margin: 10,
             responsiveClass: true,
-            autoplay: true,
+            autoplay: false,
             autoplayTimeout: 2000,
             autoplayHoverPause: false,
             responsive: {
