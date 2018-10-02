@@ -222,20 +222,17 @@
 
     <main>
 
-        <section class="v-header container">
-                    <div class="fullscreen-video-wrap">
-                      <video src="images/videos/experiencia-tef.mp4" autoplay="true" loop="true" muted>
-                    </video>
+        <section class="bg-dark" style="background-image: url('images/bg-depo.jpg'); background-size: cover;background-attachment: fixed; background-position: right;">
+                <div class="container">
+                    <div class="row" style="padding: 140px 20px">
+                        <div class="offset-lg-2 col-lg-8 header-content text-lg-center text-md-center text-center">
+                            <h1 class="mt-5 text-white">Cappta Integrado, o TEF da Cappta</h1>
+                            <p class="mb-5 mt-3 text-white">Ganhe eficiência na operação, agilidade no fechamento de caixa <br>e benefícios que vão além do pagamento.</p>
+                            <a href="#intro"><i class="fas fa-2x fa-angle-down text-success animated fadeOutDown infinite mt-2"></i></a>
+                        </div>
                     </div>
-                    <div class="header-overlay"></div>
-
-                    <div class="col-lg-12 header-content text-lg-center text-center">
-                      <h1>Cappta Integrado, o TEF da Cappta</h1>
-                      <p class="mb-5 mt-3 lead">Ganhe eficiência na operação, agilidade no fechamento de caixa<br> e benefícios que vão além do pagamento.</p>
-                      <a href="#intro"><i class="fas fa-2x fa-angle-down text-success animated fadeOutDown infinite mt-4"></i></a>
-                    </div>
+                </div>
         </section>
-
 
         <section id="intro" class="bg-light">
             <div class="container" style="padding: 70px 50px;">
@@ -457,46 +454,43 @@
                     <div class="col-lg-6 col-md-12">
                         <form>
                             <div class="row">
-                                <div class="form-group col-lg-6 col-md-6">
-                                    <label for="software" class="text-white">Nome da empresa do Software?</label>
-                                    <input type="text" class="form-control" placeholder="Empresa do software">
-                                </div>
-                                <div class="form-group col-lg-6 col-md-6">
-                                    <label for="nome" class="text-white">Nome do seu Software?</label>
-                                    <input type="text" class="form-control" placeholder="Seu software">
-                                </div>
+                                    <div class="form-group col-lg-12 col-md-12">
+                                            <label for="nome" class="text-white">Seu nome</label>
+                                            <input type="text" class="form-control" placeholder="">
+                                    </div>
                             </div>
                             <div class="row">
                                 <div class="form-group col-lg-6 col-md-6">
-                                    <label for="responsavel" class="text-white">Nome do responsável</label>
-                                    <input type="text" class="form-control" placeholder="Nome do responsável">
+                                    <label for="nome" class="text-white">Seu telefone + DDD</label>
+                                    <input type="text" class="form-control" placeholder="">
                                 </div>
                                 <div class="form-group col-lg-6 col-md-6">
-                                    <label for="email" class="text-white">E-mail</label>
-                                    <input type="text" class="form-control" placeholder="E-mail">
+                                    <label for="email" class="text-white">Seu E-mail</label>
+                                    <input type="text" class="form-control" placeholder="">
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="form-group col-lg-6 col-md-6">
-                                    <label for="telefone" class="text-white">Telefone</label>
-                                    <input type="text" class="form-control" placeholder="Telefone">
-                                </div>
-                                <div class="form-group col-lg-6 col-md-6">
-                                    <label for="nome" class="text-white">Celular</label>
-                                    <input type="text" class="form-control" placeholder="Celular">
-                                </div>
+                                    <div class="form-group col-lg-12 col-md-12">
+                                            <label for="exampleFormControlSelect1" class="text-white">Possui algum estabelecimento?</label>
+                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                <option>---</option>
+                                              <option>Sim, já tenho um estabelecimento aberto</option>
+                                              <option>Ainda não, mas pretendo abrir em breve</option>
+                                              <option>Não pretendo abrir nenhum estabelecimento</option>
+                                            </select>
+                                          </div>
                             </div>
                             <div class="row">
                                 <div class="form-group col-lg-6 col-md-6">
-                                    <label for="site" class="text-white">Qual o site da empresa</label>
-                                    <input type="text" class="form-control" placeholder="Site da empresa">
+                                    <label for="estabelecimento" class="text-white">Qual o ramo do estabelecimento?</label>
+                                    <input type="text" class="form-control" placeholder="">
                                 </div>
                                 <div class="form-group col-lg-6 col-md-6">
-                                    <label for="empresa" class="text-white">Empresa</label>
-                                    <input type="text" class="form-control" placeholder="empresa">
+                                    <label for="cnpj" class="text-white">Seu CNPJ</label>
+                                    <input type="text" class="form-control" placeholder="">
                                 </div>
                             </div>
-                            <a href="#" class="btn btn-success mt-3 pr-5 pl-5">Solicitar contato</a>
+                            <a href="#" class="btn btn-success mt-3 pr-5 pl-5">Quero meu Cappta integrado</a>
                         </form>
 
                     </div>
@@ -692,6 +686,7 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="node_modules/owl/dist/owl.carousel.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="particles.js"></script>
     <script>
         AOS.init();
     </script>

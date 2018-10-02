@@ -24,32 +24,6 @@
 
 <body>
     <header>
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content bg-success">
-                    <div class="modal-header border-0">
-
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body d-flex flex-column align-items-center justify-content-center">
-                        <h3 class="text-center text-weight-bold">A solução ideal para o seu negócio</h3>
-                    </div>
-                    <div class="modal-body d-flex flex-column align-items-center justify-content-center">
-                        <div class="btn btn-primary">Faturamento abaixo de 50 mil</div>
-                        <div class="btn btn-primary m-3">Faturamento acima de 50 mil</div>
-                        <div class="btn btn-primary">Tenho uma rede de lojas</div>
-                    </div>
-                    <div class="modal-footer d-flex flex-column align-items-center justify-content-center border-0">
-                        <img src="images/POS.png" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- NAV MOBILE -->
         <nav class="d-flex d-md-flex d-lg-none">
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -220,18 +194,17 @@
     </header>
 
     <main>
-        <section class="v-header container">
-            <div class="fullscreen-video-wrap">
-                <video src="images/videos/verde-abstrato.mp4" autoplay="true" loop="true" muted>
-                </video>
-            </div>
-            <div class="header-overlay"></div>
-            <div class="offset-lg-2 col-lg-8 header-content text-lg-center text-md-center text-center">
-                <h1>Soluções integradas de pagamento</h1>
-                <p class="mb-5 mt-3 lead">Capture suas vendas em cartão com a empresa que mudou o mercado.</p>
-                <a href="https://autenticacao.cappta.com.br/" target="_blank" class="btn btn-success m-2 d-lg-none d-md-none">Já sou cliente</a>
-                <a href="#" class="btn btn-outline-success d-lg-none d-md-none m-2" data-toggle="modal" data-target="#exampleModalCenter">Não sou cliente</a><br>
-                <a href="#intro"><i class="fas fa-2x fa-angle-down text-success animated fadeOutDown infinite mt-5"></i></a>
+        <section class="bg-dark" style="background-image: url('images/bg-depo.jpg'); background-size: cover;background-attachment: fixed; background-position: right;">
+            <div class="container">
+                <div class="row" style="padding: 140px 20px">
+                    <div class="offset-lg-2 col-lg-8 header-content text-lg-center text-md-center text-center">
+                        <h1 class="mt-5 text-white">Soluções integradas de pagamento</h1>
+                        <p class="mb-5 mt-3 text-white">Capture suas vendas em cartão com a empresa que mudou o mercado.</p>
+                        <a href="https://autenticacao.cappta.com.br/" target="_blank" class="btn btn-success m-2 d-lg-none d-md-none">Já sou cliente</a>
+                        <a href="#" class="btn btn-outline-success d-lg-none d-md-none m-2" data-toggle="modal" data-target="#exampleModalCenter">Não sou cliente</a><br>
+                        <a href="#intro"><i class="fas fa-2x fa-angle-down text-success animated fadeOutDown infinite mt-2"></i></a>
+                    </div>
+                </div>
             </div>
         </section>
 
