@@ -452,27 +452,27 @@
                
                     </div>
                     <div class="col-lg-6 col-md-12">
-                        <form>
+                        <form id="integrado">
                             <div class="row">
                                     <div class="form-group col-lg-12 col-md-12">
                                             <label for="nome" class="text-white">Seu nome</label>
-                                            <input type="text" class="form-control" placeholder="">
+                                            <input type="text" class="form-control" id="nome" required name="nome" placeholder="Obrigatório">
                                     </div>
                             </div>
                             <div class="row">
                                 <div class="form-group col-lg-6 col-md-6">
-                                    <label for="nome" class="text-white">Seu telefone + DDD</label>
-                                    <input type="text" class="form-control" placeholder="">
+                                    <label for="telefone" class="text-white">Seu telefone + DDD</label>
+                                    <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Obrigatório">
                                 </div>
                                 <div class="form-group col-lg-6 col-md-6">
                                     <label for="email" class="text-white">Seu E-mail</label>
-                                    <input type="text" class="form-control" placeholder="">
+                                    <input type="text" class="form-control" id="email" required name="email" placeholder="Obrigatório">
                                 </div>
                             </div>
                             <div class="row">
                                     <div class="form-group col-lg-12 col-md-12">
-                                            <label for="exampleFormControlSelect1" class="text-white">Possui algum estabelecimento?</label>
-                                            <select class="form-control" id="exampleFormControlSelect1">
+                                            <label for="estabelecimento" class="text-white">Possui algum estabelecimento?</label>
+                                            <select class="form-control" id="estabelecimento" name="estabelecimento">
                                                 <option>---</option>
                                               <option>Sim, já tenho um estabelecimento aberto</option>
                                               <option>Ainda não, mas pretendo abrir em breve</option>
@@ -483,14 +483,14 @@
                             <div class="row">
                                 <div class="form-group col-lg-6 col-md-6">
                                     <label for="estabelecimento" class="text-white">Qual o ramo do estabelecimento?</label>
-                                    <input type="text" class="form-control" placeholder="">
+                                    <input type="text" class="form-control" id="estabelecimento" required name="estabelecimento" placeholder="Obrigatório">
                                 </div>
                                 <div class="form-group col-lg-6 col-md-6">
                                     <label for="cnpj" class="text-white">Seu CNPJ</label>
-                                    <input type="text" class="form-control" placeholder="">
+                                    <input type="text" class="form-control" id="cnpj" name="cnpj" required placeholder="Obrigatório">
                                 </div>
                             </div>
-                            <a href="#" class="btn btn-success mt-3 pr-5 pl-5">Quero meu Cappta integrado</a>
+                            <button  class="btn btn-success mt-3 pr-5 pl-5"  type="submit">Quero meu Cappta integrado</button>
                         </form>
 
                     </div>
@@ -686,7 +686,6 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="node_modules/owl/dist/owl.carousel.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="particles.js"></script>
     <script>
         AOS.init();
     </script>
@@ -791,16 +790,45 @@
     </script>
 
         <!-- Start of LiveChat (www.livechatinc.com) code -->
-<script type="text/javascript">
-    window.__lc = window.__lc || {};
-    window.__lc.license = 6487741;
-    (function() {
-      var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
-      lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
-    })();
+    <script type="text/javascript">
+        window.__lc = window.__lc || {};
+        window.__lc.license = 6487741;
+        (function() {
+        var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+        lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+        })();
     </script>
     <!-- End of LiveChat code -->
+
+    <!-- formulario rd -->
+    <script>
+        $( "#integrado" ).submit(function( event ) {
+            var formArray = $( this ).serializeArray();
+            
+            var formObject = {};
+            for (var i = 0; i < formArray.length; i++){
+                formObject[formArray[i]['name']] = formArray[i]['value'];
+            }
+
+            formObject['url'] = '/C:/Users/jefferson.dantas.CAPPTA/Desktop/site_cappta/integrado.html';
+            formObject['token'] = '1caa26f3dfb1f285599ea7fe2d6cba48';
+            formObject['title'] = 'Cappta Integrado';
+
+            $.post('https://pageview-notify.rdstation.com.br/send', formObject,
+                function(data) { }, 'json'
+            ).done(function() {
+                console.log(data)
+                window.location = 'http://google.com';
+            });
+
+            event.preventDefault();
+        });
+    </script>
+
+    <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/a5a239d0-72d0-41a0-b896-df723d50ddc0-loader.js"></script>
+
+    <!-- fim formulario rd -->
 
     <script>
         // When the user scrolls down 20px from the top of the document, show the button
