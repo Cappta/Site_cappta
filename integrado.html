@@ -228,7 +228,8 @@
 
     <main>
 
-        <section class="bg-dark" style="background-image: url('images/bg-depo.jpg'); background-size: cover;background-attachment: fixed; background-position: right;">
+        <section class="bg-dark" style="background-image: url('images/bg-integrado.jpg'); background-size: cover;background-attachment: fixed; background-position: right;">
+            <div id="particles-js"></div>
                 <div class="container">
                     <div class="row" style="padding: 140px 20px">
                         <div class="offset-lg-2 col-lg-8 header-content text-lg-center text-md-center text-center">
@@ -458,47 +459,7 @@
                
                     </div>
                     <div class="col-lg-6 col-md-12">
-                        <form id="integrado">
-                            <div class="row">
-                                    <div class="form-group col-lg-12 col-md-12">
-                                            <label for="nome" class="text-white">Seu nome</label>
-                                            <input type="text" class="form-control" id="nome" required name="nome" placeholder="Obrigatório">
-                                    </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-group col-lg-6 col-md-6">
-                                    <label for="telefone" class="text-white">Seu telefone + DDD</label>
-                                    <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Obrigatório">
-                                </div>
-                                <div class="form-group col-lg-6 col-md-6">
-                                    <label for="email" class="text-white">Seu E-mail</label>
-                                    <input type="text" class="form-control" id="email" required name="email" placeholder="Obrigatório">
-                                </div>
-                            </div>
-                            <div class="row">
-                                    <div class="form-group col-lg-12 col-md-12">
-                                            <label for="estabelecimento" class="text-white">Possui algum estabelecimento?</label>
-                                            <select class="form-control" id="estabelecimento" name="estabelecimento">
-                                                <option>---</option>
-                                              <option>Sim, já tenho um estabelecimento aberto</option>
-                                              <option>Ainda não, mas pretendo abrir em breve</option>
-                                              <option>Não pretendo abrir nenhum estabelecimento</option>
-                                            </select>
-                                          </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-group col-lg-6 col-md-6">
-                                    <label for="estabelecimento" class="text-white">Qual o ramo do estabelecimento?</label>
-                                    <input type="text" class="form-control" id="estabelecimento" required name="estabelecimento" placeholder="Obrigatório">
-                                </div>
-                                <div class="form-group col-lg-6 col-md-6">
-                                    <label for="cnpj" class="text-white">Seu CNPJ</label>
-                                    <input type="text" class="form-control" id="cnpj" name="cnpj" required placeholder="Obrigatório">
-                                </div>
-                            </div>
-                            <button  class="btn btn-success mt-3 pr-5 pl-5"  type="submit">Quero meu Cappta integrado</button>
-                        </form>
-
+                            <script type="text/javascript" src="https://form.jotformz.com/jsform/62904115855659"></script>
                     </div>
                 </div>
 
@@ -855,6 +816,11 @@
             document.documentElement.scrollTop = 0;
         }
     </script>
+
+    <!-- scripts -->
+    <script src="node_modules/particles.js/particles.js"></script>
+    <script src="node_modules/particles.js/demo/js/app.js"></script>
+
 
 </body>
 
