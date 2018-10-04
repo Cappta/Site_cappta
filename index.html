@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
-    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="icon" href="images/desktop/favicon.png" type="image/png">
     <link rel="stylesheet" href="node_modules/compiler/default.css">
     <link rel="stylesheet" href="node_modules/compiler/bootstrap.css">
     <link rel="stylesheet" href="node_modules/owl/dist/assets/owl.carousel.min.css">
@@ -40,12 +40,12 @@
                             <h3 class="text-center text-weight-bold">A solução ideal para o seu negócio</h3>
                         </div>
                         <div class="modal-body d-flex flex-column align-items-center justify-content-center">
-                            <div class="btn btn-primary">Faturamento abaixo de 50 mil</div>
-                            <div class="btn btn-primary m-3">Faturamento acima de 50 mil</div>
-                            <div class="btn btn-primary">Tenho uma rede de lojas</div>
+                            <a href="pague.html" class="btn btn-primary">Faturamento abaixo de 50 mil</a>
+                            <a href="integrado.html" class="btn btn-primary m-3">Faturamento acima de 50 mil</a>
+                            <a href="redes-de-lojas.html" class="btn btn-primary">Tenho uma rede de lojas</a>
                         </div>
                         <div class="modal-footer d-flex flex-column align-items-center justify-content-center border-0">
-                            <img src="images/POS.png" class="img-fluid">
+                            <img src="images/desktop/POS.png" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
         <!-- NAV MOBILE -->
         <nav class="d-flex d-md-flex d-lg-none">
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-                <a class="navbar-brand" href="index.html"><img src="images/cappta_white.png" class="img-fluid"></a>
+                <a class="navbar-brand" href="index.html"><img src="images/desktop/cappta_white.png" class="img-fluid"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -127,7 +127,7 @@
             data-aos-duration="400">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="images/cappta_white.png" class="img-fluid">
+                    <img src="images/desktop/cappta_white.png" class="img-fluid">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -221,9 +221,12 @@
     </header>
 
     <main>
-        <section class="v-header container">
+
+        <!-- Desktop -->
+        <section class="v-header container d-none d-lg-flex">
                     <div class="fullscreen-video-wrap">
-                      <video src="videos/compilado.mp4" autoplay="true" loop="true" muted>
+                        
+                      <video src="videos/compilado.mp4" autoplay="true" poster="images/desktop/background/bg-depo.jpg" loop="true" muted>
                     </video>
                     </div>
                     <div class="header-overlay"></div>
@@ -235,6 +238,21 @@
                         <a href="#" class="btn btn-outline-success d-lg-none d-md-none m-2" data-toggle="modal" data-target="#exampleModalCenter">Não sou cliente</a><br>
                         <a href="#intro"><i class="fas fa-2x fa-angle-down text-success animated fadeOutDown infinite mt-2"></i></a>
                     </div>
+        </section>
+
+        <!-- Mobile -->
+        <section class="bg-dark d-flex d-lg-none" style="background-image: url('images/mobile/background/bg-home.jpg'); background-size: cover;background-attachment: fixed; background-position: right;">
+                <div class="container view-area">
+                    <div class="row">
+                        <div class="offset-lg-2 col-lg-8 header-content text-lg-center text-md-center text-center">
+                                <h1 class="mt-3 text-white">Soluções integradas de pagamento</h1>
+                                <p class="mb-3 mt-3 text-white">Capture suas vendas em cartão com a empresa que mudou o mercado.</p>
+                                <a href="https://autenticacao.cappta.com.br/" target="_blank" class="btn btn-success m-2 d-lg-none d-md-none">Já sou cliente</a>
+                                <a href="#" class="btn btn-outline-success d-lg-none d-md-none m-2" data-toggle="modal" data-target="#exampleModalCenter">Não sou cliente</a><br>
+                                <a href="#intro"><i class="fas fa-2x fa-angle-down text-success animated fadeOutDown infinite mt-2"></i></a>
+                        </div>
+                    </div>
+                </div>
         </section>
 
         <section id="menu-servicos">
@@ -282,7 +300,7 @@
             </div>
         </section>
 
-        <section id="intro" class="bg-light">
+        <section id="intro" class="bg-white">
             <div class="container d-flex flex-row align-items-center " style="padding: 120px 20px 20px;">
                 <div id="carousel1" class="owl-carousel owl-theme">
                     <div class="card-item">
@@ -296,13 +314,13 @@
                                         Estamos conectados com mais de 200 bandeiras, adquirentes e autorizadores. Conheça a Cappta e ganhe MAIS eficiência!</p>
                             </div>
                             <div class=" offset-lg-0 col-lg-6 offset-md-2 col-md-8 offset-2 col-8 my-auto order-md-1 order-lg-2 d-block d-md-block d-lg-block order-1 order-md-1 order-lg-2"
-                                data-aos="fade-left" data-aos-duration="600">
-                                <img src="images/homem-cartao.png" class="img-fluid">
+                            >
+                                <img src="images/desktop/homem-cartao.jpg" alt="homem-cartao" class="img-fluid">
                             </div>
                         </div>
                     </div>
 
-                    <div class="card-item" data-aos="fade-up" data-aos-duration="600">
+                    <div class="card-item">
                         <div class="row">
                             <div class="offset-lg-1 col-lg-4 offset-md-2 col-md-8 my-auto text-center text-lg-left text-md-center  order-2 order-md-2 order-lg-1">
                                 <h3 class="card-title text-primary mt-4">O que fazemos</h3>
@@ -315,12 +333,12 @@
                                     seu negócio.</p>
                             </div>
                             <div class=" offset-lg-1 col-lg-6 offset-md-2 col-md-8 offset-2 col-8 my-auto order-md-1 order-lg-2 d-block d-md-block d-lg-block order-1 order-md-1 order-lg-2">
-                                <img src="images/mobpin-circulo.png" class="img-fluid">
+                                <img src="images/desktop/capptaes-circulo.jpg" alt="capptaes-circulo" class="img-fluid">
                             </div>
                         </div>
                     </div>
 
-                    <div class="card-item" data-aos="fade-up" data-aos-duration="600">
+                    <div class="card-item">
                         <div class="row">
                             <div class="offset-lg-1 col-lg-4 offset-md-2 col-md-8 my-auto text-center text-lg-left text-md-center  order-2 order-md-2 order-lg-1">
                                 <h3 class="card-title text-primary mt-4">Em que acreditamos</h3>
@@ -332,7 +350,7 @@
                                 <a href="sobre.html" class="btn btn-success align-items-md-center mt-4">Nossa história</a>
                             </div>
                             <div class=" offset-lg-1 col-lg-6 offset-md-2 col-md-8 offset-2 col-8 my-auto order-md-1 order-lg-2 d-block d-md-block d-lg-block order-1 order-md-1 order-lg-2">
-                                <img src="images/laptop-circulo.png" class="img-fluid">
+                                <img src="images/desktop/laptop-circulo.jpg" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -341,7 +359,7 @@
             </div>
         </section>
 
-        <section class="bg-light">
+        <section class="bg-white">
             <div class="container" style="padding: 50px 10px 100px;">
                 <div class="row">
                     <div class="col-lg-12 mb-5">
@@ -351,7 +369,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-6 col-md-12 mb-3">
-                        <div class="card border-0 bg-dark p-5" style="background-image: url('images/balcao.jpg'); background-size: cover; background-position: right;">
+                        <div class="card border-0 bg-dark p-5" style="background-image: url('images/desktop/balcao.jpg'); background-size: cover; background-position: right;">
                             <div class="card-body pr-lg-5 pl-lg-5 pr-md-1 pl-md-1">
                                 <h4 class="card-title text-success">Para vender no <br>Balcão</h4>
                                 <p class="card-text text-white">Automatize as vendas em cartão e aumente sua
@@ -363,7 +381,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12  mb-3">
-                        <div class="card border-0 p-5" style="background-image: url('images/mobilidade.jpg'); background-size: cover; background-position: right;">
+                        <div class="card border-0 p-5" style="background-image: url('images/desktop/mobilidade.jpg'); background-size: cover; background-position: right;">
                             <div class="card-body pr-lg-1 pr-md-1 pl-md-1">
                                 <h4 class="card-title text-success">Para vender onde <br>quiser</h4>
                                 <p class="card-text text-white pr-lg-5 pb-md-5 pb-lg-0">Transforme qualquer dispositivo
@@ -376,7 +394,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12  mb-3">
-                        <div class="card border-0 p-5" style="background-image: url('images/multiplataforma.jpg'); background-size: cover; background-position: right;">
+                        <div class="card border-0 p-5" style="background-image: url('images/desktop/multiplataforma.jpg'); background-size: cover; background-position: right;">
                             <div class="card-body pr-lg-1 pl-md-4">
                                 <h4 class="card-title text-success">Para dividir com outros profissionais</h4>
                                 <p class="card-text text-white">Realize pagamentos para diferentes profissionais em uma
@@ -386,7 +404,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12  mb-3">
-                        <div class="card border-0 p-5" style="background-image: url('images/conciliacao.jpg'); background-size: cover; background-position: right;">
+                        <div class="card border-0 p-5" style="background-image: url('images/desktop/conciliacao.jpg'); background-size: cover; background-position: right;">
                             <div class="card-body">
                                 <h4 class="card-title text-success">Para conciliar suas vendas</h4>
                                 <p class="card-text text-white pr-md-5" style="margin-bottom: 36px;">Facilite sua
@@ -400,7 +418,7 @@
             </div>
         </section>
 
-        <section id="depoimentos" style="background-image: url('images/bg-depo.jpg'); background-size: cover;background-attachment: fixed; background-position: left top;">
+        <section id="depoimentos" style="background-image: url('images/desktop/background/bg-depo.jpg'); background-size: cover;background-attachment: fixed; background-position: left top;">
             <div class="container">
                 <div class="row d-flex text-lg-left text-md-center" style="padding: 100px 20px;">
                     <div class="col-lg-5 order-lg-1 order-2">
@@ -528,7 +546,7 @@
             <div class="container d-md-flex flex-md-column d-lg-flex flex-lg-row text-white">
                 <div class="offset-md-2 col-md-8 offset-lg-0 col-lg-3 text-md-center mb-5 text-lg-left">
                     <a href="#">
-                        <img src="images/cappta_white.png" class="pb-3">
+                        <img src="images/desktop/cappta_white.png" class="pb-3">
                     </a>
                     <p>Rua Gomes de Carvalho, 1609 <br>Vila Olímpia - São Paulo - SP <br>CEP: 04547-006 <br>
                     </p>
@@ -580,7 +598,7 @@
                 </div>
                 <div class="offset-md-2 col-md-8 offset-lg-0 col-lg-3 text-center">
                     <a>
-                        <img src="images/afrac.png" class="mb-3">
+                        <img src="images/desktop/afrac.png" class="mb-3">
                     </a>
                     <p class="text-center mb-0">Vencedora do primeiro prêmio Afrac de Excelência (Biênio 2017/2018) na
                         categoria

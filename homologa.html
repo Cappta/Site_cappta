@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
-    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="icon" href="images/desktop/favicon.png" type="image/png">
     <link rel="stylesheet" href="node_modules/compiler/default.css">
     <link rel="stylesheet" href="node_modules/compiler/bootstrap.css">
     <link rel="stylesheet" href="node_modules/owl/dist/assets/owl.carousel.min.css">
@@ -28,7 +28,7 @@
         <!-- NAV MOBILE -->
         <nav class="d-flex d-md-flex d-lg-none">
                 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-                    <a class="navbar-brand" href="index.html"><img src="images/cappta_white.png" class="img-fluid"></a>
+                    <a class="navbar-brand" href="index.html"><img src="images/desktop/cappta_white.png" class="img-fluid"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -101,7 +101,7 @@
                 data-aos-duration="400">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
-                        <img src="images/cappta_white.png" class="img-fluid">
+                        <img src="images/desktop/cappta_white.png" class="img-fluid">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -193,7 +193,9 @@
             </nav>
     </header>
     <main>
-        <section class="v-header container">
+
+        <!-- Desktop -->
+        <section class="v-header containe d-none d-lg-flex">
                     <div class="fullscreen-video-wrap">
                       <video src="videos/Words.mp4" autoplay="true" loop="true" muted>
                     </video>
@@ -208,10 +210,24 @@
                     </div>
         </section>
 
+        <!-- Mobile -->
+        <section class="bg-dark d-flex d-lg-none" style="background-image: url('images/mobile/background/bg-homologa.jpg'); background-size: cover;background-attachment: fixed; background-position: center;">
+                    <div class="container view-area">
+                        <div class="row">
+                            <div class="offset-lg-2 col-lg-8 header-content text-lg-center text-md-center text-center">
+                                    <h1 class="text-white mt-4">Homologue seu Software</h1>
+                                    <p class="text-white mb-5 mt-3">A integração mais rápida do mercado!</p>
+                                    <a href="#" target="_blank" class="btn btn-outline-success">Quero homologar</a><br><br>
+                                    <a href="#intro"><i class="fas fa-2x fa-angle-down text-success animated fadeOutDown infinite mt-5"></i></a>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
         <section style="background: #eeeeee">
             <div class="container">
                 <div class="row" style="padding: 80px 10px;">
-                    <div class="col-lg-5 mb-5 text-center text-lg-left" data-aos="fade-up" data-aos-duration="600">
+                    <div class="col-lg-5 mb-5 text-center text-lg-left">
                         <h2 class="mb-2 text-primary">Um grande hub de soluções</h2>
                         <p>Aqui a gente vai além dos meios de pagamento. Nossas funcionalidades e integrações vão
                             permitir que você agregue ainda mais valor ao seu software.</p>
@@ -219,16 +235,16 @@
                         <h2 class="mb-2 mt-5 text-primary">Tem uma grande ideia?</h2>
                         <p>Estamos sempre abertos a novos projetos que tragam mais eficiência a gestão do varejista!</p>
                     </div>
-                    <div class="offset-lg-1 col-lg-6" data-aos="fade-up" data-aos-duration="600">
-                        <img src="images/fluxo-automação.png" class="img-fluid">
+                    <div class="offset-lg-1 col-lg-6">
+                        <img src="images/desktop/fluxo-automação.png" class="img-fluid">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section style="background-image: url('images/bg-depo.jpg'); background-size: cover;background-attachment: fixed; background-position: left top;">
+        <section style="background-image: url('images/desktop/background/bg-depo.jpg'); background-size: cover;background-attachment: fixed; background-position: left top;">
             <div class="container">
-                <div class="row" style="padding: 100px 10px;" data-aos="fade-up" data-aos-duration="600">
+                <div class="row" style="padding: 100px 10px;">
                     <div class="col-lg-6">
                         <h2 class="mb-4 text-success">Eficiência para o seu cliente</h2>
                         <p class="text-white"><i class="fa fa-check mr-3 text-success"></i>Instalação rápida (instalador integrado)</p>
@@ -244,7 +260,7 @@
                             <h2 class="text-success mb-4">Comodidade para você!</h2>
                             <div class="row">
                                 <div class="col-lg-2 col-md-2 col-4">
-                                    <img src="images/icone_melhor_atendimento.png" class="img-fluid mb-3">
+                                    <img src="images/desktop/icone_melhor_atendimento.png" class="img-fluid mb-3">
                                 </div>
                                 <div class="col-lg-10 col-md-8 col-12">
                                     <p class="text-white">Melhor atendimento do mercado. Empresa vencedora do prêmio Afrac 2017.</p>
@@ -252,7 +268,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-lg-2 col-md-2 col-4">
-                                    <img src="images/facilidade.png" class="img-fluid mb-3">
+                                    <img src="images/desktop/facilidade.png" class="img-fluid mb-3">
                                 </div>
                                 <div class="col-lg-10 col-md-8 col-12">
                                     <p class="text-white">Facilidade para ativar novas bandeiras e adquirentes com o serviço <a href="ativa.html" class="text-success">Cappta Ativa.</a></p>
@@ -261,7 +277,7 @@
 
                             <div class="row">
                                 <div class="col-lg-2 col-md-2 col-4">
-                                    <img src="images/icone_datacenter.png" class="img-fluid mb-3">
+                                    <img src="images/desktop/icone_datacenter.png" class="img-fluid mb-3">
                                 </div>
                                 <div class="col-lg-10 col-md-8 col-12">
                                     <p class="text-white">Várias linguagens de programação, exemplos de código e integrações disponíveis.</p>
@@ -269,7 +285,7 @@
                             </div>
                             <div class="row">
                                     <div class="col-lg-2 col-md-2 col-4">
-                                        <img src="images/settings.png" class="img-fluid mb-3">
+                                        <img src="images/desktop/settings.png" class="img-fluid mb-3">
                                     </div>
                                     <div class="col-lg-10 col-md-8 col-12">
                                         <p class="text-white">Sem necessidade de solicitar e ativar números lógicos com as redes adquirentes. </p>
@@ -281,25 +297,25 @@
             </div>
         </section>
 
-        <section class="bg-light">
+        <section class="bg-white">
             <div class="container">
-                <div class="row" style="padding: 100px 0;" data-aos="fade-up" data-aos-duration="600">
+                <div class="row" style="padding: 100px 0;">
                     <div class="offset-lg-2 col-lg-8 text-center mb-3">
                         <h2 class="mb-3 text-primary">Infraestrutura Cappta</h2>
                         <p>Nossa Tecnologia foi desenhada para que o parceiro não precise para administrar
                             infraestrutura de meios de pagamento.</p>
                     </div>
                     <div class="offset-1 col-10 d-lg-flex d-md-none d-none">
-                        <img src="images/fluxo-servidores.png" class="img-fluid" alt="fluxo">
+                        <img src="images/desktop/fluxo-servidores.jpg" class="img-fluid" alt="fluxo">
                     </div>
                     <div class="col-12 d-lg-none d-md-none d-flex">
-                        <img src="images/fluxo-servidores-mobile.png" class="img-fluid mx-auto">
+                        <img src="images/desktop/fluxo-servidores-mobile.png" class="img-fluid mx-auto">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="depoimentos" style="background-image: url('images/bg-depo.jpg'); background-size: cover;background-attachment: fixed; background-position: left top;"
+        <section id="depoimentos" style="background-image: url('images/desktop/background/bg-depo.jpg'); background-size: cover;background-attachment: fixed; background-position: left top;"
         >
             <div class="container">
                 <div class="row d-flex" style="padding: 100px 20px;">
@@ -356,7 +372,7 @@
             </div>
         </section>
 
-        <section id="formulario" class="bg-primary" style="background-image: url('images/bg-mobile.jpg'); background-size: cover;background-attachment: fixed; background-position: top;">
+        <section id="formulario" class="bg-primary" style="background-image: url('images/desktop/background/bg-mobile.jpg'); background-size: cover;background-attachment: fixed; background-position: top;">
             <div class="container">
                 <div class="row" style="padding: 100px 0;">
                     <div class="col-lg-5 my-auto"> 
@@ -432,7 +448,7 @@
         <div class="container d-md-flex flex-md-column d-lg-flex flex-lg-row text-white">
             <div class="offset-md-2 col-md-8 offset-lg-0 col-lg-3 text-md-center mb-5 text-lg-left">
                 <a href="#">
-                    <img src="images/cappta_white.png" class="pb-3">
+                    <img src="images/desktop/cappta_white.png" class="pb-3">
                 </a>
                 <p>Rua Gomes de Carvalho, 1609 Vila Olímpia - São Paulo - SP CEP: 04547-006 © 2017 Cappta. Todos os
                     direitos
@@ -481,7 +497,7 @@
             </div>
             <div class="offset-md-2 col-md-8 offset-lg-0 col-lg-3 text-center">
                 <a href="#">
-                    <img src="images/afrac.png" class="mb-3">
+                    <img src="images/desktop/afrac.png" class="mb-3">
                 </a>
                 <p class="text-center mb-0">Vencedora do primeiro prêmio Afrac de Excelência (Biênio 2017/2018) na
                     categoria
