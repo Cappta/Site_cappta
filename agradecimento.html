@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="icon" href="images/desktop/favicon.png" type="image/png">
+    <link rel="stylesheet" href="node_modules/compiler/default.css">
+    <link rel="stylesheet" href="node_modules/compiler/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/owl/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="node_modules/owl/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="node_modules/animate/animate.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+    <title>Cappta</title>
+</head>
+
+<body>
+        <header>
+
+      
+      
+        
+                <!-- NAV PRINCIPAL -->
+                <nav class="navbar navbar-expand-lg navbar-dark fixed-top d-lg-flex d-none" data-aos="fade-down"
+                    data-aos-duration="400">
+                    <div class="container">
+                        <a class="navbar-brand mx-auto mt-4" href="index.html">
+                            <img src="images/desktop/cappta-agradecimento.png" class="img-fluid">
+                        </a>
+
+                    </div>
+                </nav>
+        
+            </header>
+
+    <main>
+
+
+        <section class="v-header container">
+                    <div class="fullscreen-video-wrap"  style="height: 100vh !important">
+                        
+                      <video src="videos/compilado.mp4" autoplay="true" poster="images/desktop/background/bg-depo.jpg" loop="true" muted>
+                    </video>
+                    </div>
+                    <div class="header-overlay"  style="height: 100vh !important"></div>
+
+                    <div class="offset-lg-2 col-lg-8 header-content text-lg-center text-md-center text-center" data-aos="fade-up"
+                    data-aos-duration="400">
+                        <div><img src="images/desktop/cappta-agradecimento.png" class="img-fluid mb-5 d-lg-none d-flex mx-auto"></div>
+                        <i class="fas fa-6x fa-heart animated bounceIn infinite text-success "></i>
+                        <h1 class="mt-5 text-white">Muito obrigado!</h1>
+                        <p class="mb-5 mt-3 text-white">Estamos muito felizes pelo seu interesse! <br>Em breve entraremos em contato. 
+                        </p>
+                        <h4 class="mb-2 mb-lg-4">Já conhece nossas outras soluções?</h4>
+                        <a href="index.html" class="btn btn-outline-success mt-3">Clique e veja mais</a>
+
+
+                    </div>
+        </section>
+
+    </main>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/owl/dist/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script>
+        /* SCRIPT JQUERY PARA TROCAR DE COR NAVBAR */
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('.navbar').css("background-color", "rgba(38, 44, 57, 0.8)")
+            } else {
+                $('.navbar').css("background-color", "transparent")
+            }
+        });
+
+        // MODAL
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
+    </script>
+
+
+   
+</body>
+
+</html>
